@@ -1,0 +1,52 @@
+body,h1,.hgroup h2,h2,h3,h4,h5,h6,blockquote,p,pre,dl,dd,menu,ol,ul,caption,th,td,form,fieldset,legend,input,button,textarea{margin:0;padding:0}h1,.hgroup h2,h2,h3,h4,h5,h6{font-size:100%}
+menu,ol,ul,li{list-style:none}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,cite,dfn,em,var{font-style:normal}code,kbd,pre,samp{font-family:'courier new',courier,monospace}
+input,button,textarea,select{font-size:100%}abbr[title]{border-bottom:1px dotted;cursor:help}a{outline:0;text-decoration:none}body,input,button,textarea,select,option,optgroup{font-family:"微软雅黑","宋体","黑体",Arial;font-size:12px}
+.cfl,.header_wrap{*zoom:1}.cfl:after,.header_wrap:after{content:"\0020";display:block;height:0;clear:both;overflow:hidden;visibility:hidden}
+.hidden{display:none}.footer_service_online dd,.footer_copy_img,.header_logo a,.header_menu_top_list span.item1,.goodsDisplay_item2_pop,.footer_service_online li.item1,.footer_service_online li.item3 a,.footer_service_sina span.item1,.footer_service_qq span.item1,.header_menu_nav_miphone span{background-image:url(webIndey.gif);background-repeat:no-repeat}
+.footer_service_online dd,.footer_copy_img,.header_logo a,.goodsDisplay_item2_pop,.footer_Nums li a,.footer_service_online li.item1,.footer_service_online li.item3 a{text-indent:-9999px;overflow:hidden}
+.header_wrap{width:960px;margin:0 auto;padding:17px 0 15px;border-bottom:2px solid #c00}.header_logo{float:left;padding-top:14px}.header_menu{float:right;_width:730px}
+.header_menu a{color:#979693}.header_menu a:hover{color:#f60}.header_logo a{display:block;width:135px;height:56px;background-position:-1px -34px}.header_menu_top{height:34px}
+.header_menu_top li{float:right;height:16px;line-height:16px}.header_menu_top_cart{width:95px;padding:8px 0 5px 15px;border-width:1px 1px 0;border-style:solid;border-color:#fff;cursor:pointer;color:#979693}
+.header_menu_top_list,.header_menu_top_gocart{display:block;float:left}.header_menu_top_list{padding:0}.header_menu_top_list span{float:left;display:block}
+.header_menu_top_list span.item1{width:22px;height:18px;background-position:-147px -66px}.header_menu_top_list span.item2{padding:0;color:#979693}.header_menu_top_list span.item2 em{display:inline-block;padding:0 2px;color:#fa7a20;font-size:14px}
+a.header_menu_top_gocart{width:60px;height:26px;line-height:26px;background-color:#fd673c;color:#fff;font-weight:bold;text-align:center}a.header_menu_top_gocart:hover{color:#fff}
+.header_menu_top_login{padding:0;margin:11px 0 0;color:#979693}.header_menu_top_login a{display:block;float:left;border-right:1px solid #e6e4e3;padding:0 10px}
+.header_menu_top_login a.no_border{border:0;padding-right:0}.header_menu_top_order{padding:0 15px;margin:11px 0 0 15px;border-width:0 1px;border-style:solid;border-color:#e6e4e3}
+.header_menu_top_order a{color:#979693}.header_menu_top_login_user{display:block;float:left}.header_menu_top_login_user strong{font-weight:normal}.header_miniCart{position:absolute;width:359px;padding:1px 0 0;right:-1px;top:29px;border-width:0 1px 1px;border-style:solid;border-color:#f77824;background:#fff url(http://p.www.xiaomi.com/images/new816/index_minicart_01.gif?02) no-repeat left top;z-index:999}
+.header_miniCart_go{text-align:right}.header_miniCart_go a{line-height:30px;color:#fff;display:inline-block;width:80px;border-radius:5px;padding:0 16px;margin-left:28px;font-size:13px;background:#ff6b41 url(http://p.www.xiaomi.com/zt/120727/indexicon.png) right -21px no-repeat;text-decoration:none;font-family:"Microsoft YaHei";font-weight:bold;text-align:left}
+.header_miniCart_nogood{padding:15px 0 10px;color:#999;font-size:13px;text-align:center}.header_miniCart_nogood a{color:#f60}.header_miniCart_gocart{padding-bottom:10px;text-align:right}
+.header_miniCart_gocart a{display:inline-block;margin:0 20px 10px 0;width:88px;height:25px;line-height:25px;background-color:#fe683e;color:#fff;font-weight:bold;text-align:center}
+.header_miniCart_gocart a:hover{color:#fff}.header_hoverOn{position:relative;border-width:1px 1px 0;border-style:solid;border-color:#f77824;z-index:999}
+.header_menu_nav{float:right;height:16px;margin-top:20px;line-height:16px}.header_menu_nav li{float:left;margin-left:22px}.header_menu_nav li a{font-size:15px;line-height:20px;font-weight:bold;color:#5e5d5c;font-family:"Arial","Microsoft YaHei","黑体","宋体",sans-serif}
+@media only screen and (orientation:portrait){.header_menu_nav li a{font-size:15.5px;line-height:20px;font-weight:bold;color:#5e5d5c;font-family:"Arial","Microsoft YaHei","黑体","宋体",sans-serif}
+}@media only screen and (orientation:landscape){.header_menu_nav li a{font-size:15.5px;line-height:20px;font-weight:bold;color:#5e5d5c;font-family:"Arial","Microsoft YaHei","黑体","宋体",sans-serif}
+}.header_menu_nav li a:hover,.header_menu_nav li a.on{color:#c00}.header_hoverOn .header_menu_top_list span.item2{color:#fa7a20}.header_menu_nav li.m2{position:relative;z-index:1002;background-color:#fff}
+.header_menu_nav_miphone{display:none;position:absolute;left:-15px;top:17px;width:195px;z-index:1003}.header_menu_nav_miphone p{border-width:0 1px 1px;border-style:solid;border-color:#e1e1e1;background:#fff url(webIndez.gif) no-repeat left top}
+.header_menu_nav_miphone p a{display:block;line-height:16px}.header_menu_nav li.m2 .header_menu_nav_miphone a{width:175px;margin:0 auto;height:50px;line-height:50px;text-indent:10px;border-bottom:1px solid #e6e4e3;color:#989898;font-family:"Microsoft yahei";font-size:14px;font-weight:bold}
+.header_menu_nav li.m2 .header_menu_nav_miphone a:hover{width:175px;color:#f60}.header_menu_nav_miphone span{display:block;margin:0 0 0 41px;background-position:-355px -67px;_background-position:-355px -64px;width:24px;height:14px}
+.breadcrumbs{width:960px;margin:10px auto;color:#979693}.breadcrumbs a{color:#979693}.breadcrumbs a:hover{color:#fa7a20}.header_adv{width:940px;margin:0 auto;color:#666}
+.header_adv a{color:#666}.header_adv a:hover{color:#f60}.header_adv ul{padding:20px 0 10px;height:16px;line-height:16px}.header_adv_route{float:left}.header_adv_link{float:right}
+.header_adv_link a{display:inline-block;padding-right:25px;background:url(http://p.www.xiaomi.com/zt/120727/indexicon.png) right 0 no-repeat}.footer_Con{width:960px;margin:50px auto 0}
+.footer_Nums{height:27px;padding:20px 0;background:url(index_fo.gif) no-repeat center;border-width:1px 0;border-style:solid;border-color:#e1e1e1}
+.footer_Nums li{float:left}.footer_Nums li a{display:block;width:175px;height:27px;margin:0 0 0 55px}.footer_copy{padding:30px 0 70px;text-align:center;color:#999;background-color:#fafafa}
+.footer_copy a{color:#999;margin:0 3px}.footer_Con a:hover{color:#f60}.footer_copy_img{margin:30px auto 0;display:block;width:200px;height:24px;background-position:-136px -35px}
+.footer_service{padding:30px 0}.footer_service dl{float:left;width:130px}.footer_service dt{padding-bottom:20px;color:#545351;font-size:14px}.footer_service dd{padding:0 0 10px}
+.footer_service dd a{display:block;padding-left:7px;background:url(index_ic.gif) no-repeat 0 -72px;color:#979693}
+.footer_service ul{float:right}.footer_service_online li.item1{width:196px;height:21px;background-position:-336px -34px}.footer_service_online li.item2{padding:8px 0 13px;color:#979693}
+.footer_service_online li.item3 a{display:block;width:203px;height:69px;background:url(webIndf0.gif) no-repeat 0 0}
+.footer_service_online li.item3 a:hover{background-position:0 -69px}.footer_service_sina span,.footer_service_qq span{float:left;display:block}.footer_service_sina span.item2{padding:2px 0 0 5px}
+.footer_service_qq span.item2{padding:2px 0 0 6px}.footer_service dd.footer_service_sina a,.footer_service dd.footer_service_qq a{background:0}.footer_service_sina span.item1{background-position:-479px -64px;width:21px;height:18px}
+.footer_service_qq span.item1{background-position:-436px -63px;width:20px;height:20px}.footer_service_sina a:hover span.item1{background-position:-456px -64px}
+.footer_service_qq a:hover span.item1{background-position:-417px -63px}.goodsDisplay{color:#979693;line-height:16px}.goodsDisplay_item1 a{display:block;height:260px;line-height:260px;overflow:hidden;text-align:center;vertical-align:middle;_font-size:240px}
+.goodsDisplay_item1 img{vertical-align:middle}.goodsDisplay_item2{position:relative;line-height:20px}.goodsDisplay_item2 a{color:#979693}.goodsDisplay_item2 a:hover{color:#f60}
+.goodsDisplay_item2,.goodsDisplay_item3{padding:0 20px}.goodsDisplay_item3{height:18px;overflow:hidden;line-height:18px}.goodsDisplay_item3 em{color:#979693}
+.goodsDisplay_item3 strong{color:#f18336;font-weight:normal}.goodsDisplay_item3 span{text-decoration:line-through;margin-right:10px}.goodsDisplay_item2_pop{position:absolute;left:20px;top:-24px;width:48px;height:18px;background-position:-301px -66px}
+.goodsDisplay_item4{padding-top:10px}.goodsDisplay_item4 a{padding-left:20px;background:url(index_ic.gif) no-repeat 0 -93px;color:#ff4d00}
+.goodsDisplay_item4 p{display:none;position:absolute;left:0;top:10px;width:100%;height:30px;line-height:30px;color:#f18336;text-align:center;font-weight:bold;border:1px solid #f77824;background-color:#fff}
+.m_form{font-size:14px;line-height:24px}.m_form label{display:block}.m_form label span{color:#df5e41;font-size:18px;vertical-align:middle;margin:0 2px}
+.m_form input,.m_form textarea,#card,.cardTxt{border-color:#e1e1e1;border-style:solid;border-width:1px;font-size:14px;background-color:#fff}.m_form select{font-size:14px}
+#card,.cardTxt{width:180px}.m_form input,.m_form textarea,#card,.cardTxt{line-height:30px;height:30px;padding:0 4px}.m_form select{padding:8px 4px}.m_form input:hover,.m_form textarea:hover,.m_form input:focus,.m_form textarea:focus,#card:hover,#card:focus,.cardTxt:hover,.cardTxt:focus{border-color:#f37c3b;color:#000;background-color:#fff}
+.m_form .m_f{margin-bottom:10px}.m_form .m_f_address_details{margin:10px 0}.m_form .m_f_msg_error,.m_form .m_f_msg_ok{display:none}.m_form .m_f_msg{color:#b2b2b2;font-size:12px}
+.m_form .m_f_btn input{color:#FFF;background:#f37520;border:0;font-weight:700;padding:6px 20px;cursor:pointer}.m_form .m_f_btn_a input{background:#CCC;color:#FFF}
+.m_form .m_f_email input,.m_form .m_f_username input{width:290px}.m_form .m_f_address_details textarea{width:400px}.m_form .m_f_zipcode input{width:100px}
+dd.tenGoodsTitle{font-size:12px;width:110px}

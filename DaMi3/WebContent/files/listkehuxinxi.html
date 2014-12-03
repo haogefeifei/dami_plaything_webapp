@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link href="styles/examples-offline.css" rel="stylesheet">
+<link href="styles/kendo.common.min.css" rel="stylesheet">
+<link href="styles/kendo.default.min.css" rel="stylesheet">
+<script src="js/jquery.min.js"></script>
+<script src="js/kendo.web.min.js"></script>
+<script src="js/console.js"></script>
+</head>
+<body>
+        <script src="js/people.js"></script>
+        <div id="example" class="k-content">
+            <div id="clientsDbs">
+				<div id="grid" style="height: 380px">
+					请输入查询的用户名：<input type="text" name="" value="" /><input type="submit" value="查询" />(1为激活，0为未激活)
+				</div>
+            </div>
+            <style scoped>
+                #clientsDb {
+                    width: 600px;
+                    height: 413px;
+                    margin: 30px auto;
+                    padding: 51px 4px 0 4px;
+                }
+            </style>
+            <script>
+            var dataSource=[];
+                $(document).ready(function() {
+                	$.ajax({
+                		url:"dami_selectuser",
+                		type:"POST",
+                		async:false,
+                		success:function(d){
+                			dataSource = d;
+                		}
+                	});
+                    $("#grid").kendoGrid({
+                        dataSource: {
+                            data: dataSource,
+                            pageSize: 10
+                        },
+                        groupable: true,
+                        sortable: true,
+                        pageable: {
+                            refresh: true,
+                            pageSizes: true
+                        },
+                        columns: [
+                            { field: "usernickname", width: 90, title: "昵称"} ,
+                            { field: "username", width: 90, title: "登陆名"} ,
+                            { field: "usertel", width: 90, title: "注册电话"} ,
+                            { field: "usermail", width: 90, title: "注册邮箱"} ,
+                            { field: "usercode", width: 90, title: "是否激活"} ,
+                            { field: "usertime", width: 90, title: "注册时间"} ,
+                            { field: "sex", width: 90, title: "性别"},
+                            {command: {click:"left.jsp",text:"das"},width: 90, title: "性别"}    
+                        ]
+                    });
+                });
+            </script>
+        </div>
+
+</body>
+</html>

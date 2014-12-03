@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC 
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN" 
+    "http://struts.apache.org/dtds/struts-2.0.dtd" >
+<struts>
+	<package name="shopcar" extends="struts-default">
+	    
+		<action name="product_*" class="ShopCartAction" method="{1}">
+			<result name="updateproduct" type="redirect">addshopcart</result>
+		</action>
+	    
+	    
+	    <!-- 添加到购物车 -->
+	    <action name="addshopcart" class="ShopCartAction" method="addToCart">
+			<result name="success" type="redirect">shopcart</result>
+			<result name="nologin">/login6.jsp</result>	  
+			
+		</action>
+		
+	    <!-- 购物车 -->
+	    <action name="shopcart" class="ShopCartAction">
+			<result name="success">/shopping.jsp</result>
+			<result name="noshopcart">/shoppingNo.jsp</result>	  
+			<result name="nologin">/login6.jsp</result>	  
+		</action>
+		
+	    <!-- 删除购物车 -->
+	    <action name="deleshopcart" class="ShopCartAction"  method="delectCart">
+			<result name="success" type="redirect">shopcart</result>
+			<result name="nologin">/login6.jsp</result>	  
+		</action>
+		
+	</package>
+</struts>
+
+ 

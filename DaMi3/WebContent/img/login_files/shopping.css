@@ -1,0 +1,446 @@
+/* shopping , 2011-7-30 wulin*/
+.container{width:980px;margin:0 auto;}.hidden{display:none;}
+.shopCarbag{border-bottom:1px solid #eaeaea;-moz-border-radius:2px;-khtml-border-radius:2px;-webkit-border-radius:2px;border-radius:2px;/*background:url(http://p.www.xiaomi.com/images/shopCar_message_title.gif) repeat-x bottom;*/}
+.shopCarNav{background:url(http://p.www.xiaomi.com/images/xmSale_shopCarTopBg.gif) no-repeat center;height:35px;padding:10px 0 0 0;}
+.shopCarNav li,.shopCarBtn a,.shopInfor_btn .item2 a,.shopInfor_btn .item2 input,.payOnline_btn input,#controls span a,.styleSel_list_Btn a,.shopCarLi_package_icon,#family_mi .price a{background-image:url(http://p.www.xiaomi.com/images/shopCartNav.gif?20120404);background-repeat:no-repeat;}
+.shopCarNav li{height:20px;float:left;}
+.shopCarNav li.item1{background-position:0 -2px;width:112px;margin:0 208px 0 92px!important;_margin:0 208px 0 50px;}
+.shopCarNav li.item2{background-position:-118px -24px;width:130px;margin-right:210px;}
+.shopCarNav2 li.item2{background-position:-118px -2px;}
+.shopCarNav2 li.item1,.shopCarNav3 li.item1{background-position:0px -24px;}
+.shopCarNav li.item3{background-position:-253px -24px;width:137px;}
+.shopCarNav3 li.item3{background-position:-251px -3px;}
+.flash-success{background-color: #EAEAEA;color:#008000;font-size:14px;font-weight:bold;padding:15px;}
+/*S shoppingCart*/
+.xmcart_message{border:1px solid #d6e2cc;background-color:#eef6e7;margin:30px 0 0;color:#93b468;-moz-border-radius:5px;-khtml-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;}
+.shopCarBox{margin:25px 0 0;}
+.shopCarBtn{text-align:right;padding:20px 0 15px 0;}
+.shopCarBtn a{display:inline-block;height:41px;overflow:hidden;vertical-align:middle;}
+.shopCarBtn a.item1{background-position:0 -701px;margin-right:10px;width:137px;}
+.shopCarBtn a.item2{background-position:-304px -557px;width:117px;}
+/* .shopCarBtn a.item1:active{background-position:-304px -599px;} */
+.shopCarBtn a.item2:active{background-position:-68px -570px;}
+.shopCarBtn a.bnt_blue_1{width:85px;float:left;background:url(http://p.www.xiaomi.com/images/shopCar_message_del.gif) no-repeat left center;text-align:left;padding-left:15px;height:20px;line-height:20px;font-size:14px;color:#333333;}
+.shopCarBtn a.bnt_blue_1:hover{color:#ff6600;}
+.shopCarTotal{color:#333333;font-weight:bold;font-size:16px;text-align:right;padding:20px 15px 20px 0;background-color:#ffefe5;}
+.shopCarTotal strong{color:#e94b01;}
+.shopCarLi p{float:left;font-size:16px;}
+.mi_goods_name{width:480px;line-height:20px;padding:10px 0 0 10px;}
+.mi_goods_pic{width:60px;height:60px;border:1px solid #eeeeee;background-color:#ffffff;padding:1px;text-align:center;overflow:hidden;-moz-border-radius:3px;-khtml-border-radius:3px;-webkit-border-radius:3px;border-radius:3px;-moz-box-shadow:0 0 3px #eee;-khtml-box-shadow:0 0 3px #eee;-webkit-box-shadow:0 0 3px #eee;}
+.mi_goods_pic img{width:60px;height:60px;}
+.mi_goods_name span{display:block;color:#999999;height:24px;line-height:24px;overflow:hidden;margin-top:5px;}
+.shopCarLi .mi_price{padding-top:25px;text-align:right;float:right;margin-right:5px;}
+.shopCarLi .mi_del_order{white-space:nowrap;text-align:right;padding:0;float:right;_width:expression((documentElement.clientWidth > 55)?"55px":"auto");}
+.shopCarLi .mi_del_order a{line-height:18px;}
+.shopCarLi .mi_del_orderUSer{padding-top:25px;}
+.mi_del_order a{color:#e05e40;text-decoration:underline;font-size:14px;display:block;height:20px;margin-bottom:10px;}
+.shopCarTit{height:27px;font-size:16px;line-height:18px;color:#333333;}
+.userInfor{background-color:#f9f8f6;padding:45px;}
+.mi_price select{line-height:16px;padding:6px;}
+.shopCarUl{border:1px solid #e0dfdf;border-top:0;background-color:#ffffff;-moz-border-radius:5px;-khtml-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;}
+.shopCarUl .summary{display:none;}
+.shopCarLi p.mi_price_check{float:right;}
+.shopCarUl li.even{background-color:#ffffff;}
+.shopCarUl .items{border-bottom:1px solid #f0d2c4;}
+#shopCarUlForm .items{border:0;}
+.section .tit { font-size: 14px; line-height: 30px; color: #333; margin: 0 0 16px; border-bottom: 1px solid #D9D8D8; }
+.section .tit span { font-family: verdana; font-size: 13px; }
+#family_mi, #promos { margin: 20px 0 0; }
+#family_mi { font-size: 14px; }
+#family_mi li { float: left; display: inline; width: 180px; padding: 0 0 8px; margin: 0 20px 0 0; min-height: 250px; _height: 250px; }
+#family_mi li.fm5 { margin-right: 0; }
+#family_mi dt { margin: 0 0 17px; }
+#family_mi dt a { display: block; width: 178px; height: 180px; border: 1px solid #E3E3E3; overflow: hidden; text-align: center; }
+#family_mi dd { line-height:18px;height:36px;overflow:hidden;}
+#family_mi .price { color: #ED5E0F;font-size: 16px; font-weight: 700;padding-top:10px;}
+#family_mi .price strong,#family_mi .price a{display:block;height:25px;}
+#family_mi .price strong{float:left;}
+#family_mi .price strong del{font-size:14px;color:#333;font-weight:normal;margin-right:5px;}
+#family_mi .price a{float:right;width:78px;text-indent:-9999px;overflow:hidden;background-position:-370px -346px;}
+.family_mi_addCart{padding-bottom:10px;}
+.shopCarLi_package{clear:both;background-color:#F9F9F9;position:relative;}
+.shopCarLi_package_icon{display:block;width:16px;height:12px;position:absolute;left:38px;top:-10px;background-position:-482px -138px;}
+.shopCarLi_package_list{padding:10px 15px 10px 64px;border-top:1px solid #e5e5e5;}
+.shopCarLi_box{padding:15px;border-top:1px solid #e5e5e5;}
+.shopCarTips{color:#CC0000;text-align:right;padding-top:10px;}
+/*E shoppingCart*/
+/*S login*/
+.xmLogin{background:url(xmsale_l.gif) no-repeat 30px 120px;}
+.xmLogin_form{float:right;width:290px;background-color:#ffffff;padding:45px;border:1px solid #e3e3e3;-moz-border-radius:3px;-khtml-border-radius:3px;-webkit-border-radius:3px;border-radius:3px;}
+.xmLogin_form h2{font-size:24px;color:#19b8f3;margin-bottom:24px;}
+.xmBox_login_Btn{padding:30px 0 30px 50px;}
+.xmBox_login_Btn input{background:url(shopCartNav.gif)  no-repeat -186px -430px transparent;color:#ffffff;font-size:14px;width:117px;height:41px;line-height:42px;border:0;cursor:pointer;}
+.xmBox_login_Btn input:focus{background-position:-186px -556px;}
+.xmBox_login_Btn a{color:#333333;font-size:14px;margin-left:15px;}
+.xmBox_login li{height:64px;}
+.xmBox_login li label{display:block;float:left;width:45px;height:35px;line-height:35px;overflow:hidden;font-size:14px;color:#333333;}
+.xmBox_login li label .required{display:none;}
+.xmBox_login li input{display:block;float:right;width:230px;border:1px solid #cccccc;background-color:#F6F6F6;height:34px;line-height:34px;font-size:14px;padding:0 4px;}
+.xmBox_login li input:hover,.xmBox_login li input:focus{background-color:#ffffff;border-color:#F37C3B;color:#000000;}
+.xmBox_login .errorMessage{clear:both;padding:8px 0 0 50px;}
+.xmBox_login_reginTips{font-size:15px;border-top:1px solid #19b8f3;text-align:right;padding-top:15px;}
+.xmBox_login_reginTips a{color:#19b8f3;text-decoration:underline;}
+.rememberMe{padding-left:50px;}
+.rememberMe input{vertical-align:middle;margin-right:3px;}
+.xmBox_login_psw label{word-space:14px;}
+/*E login*/
+/* S emptyShopCar*/
+.emptyShopCar_tips{height:270px;font-size:30px;color:#666666;padding:80px 0 0 340px;margin:150px 0 100px 180px;background:url(http://p.www.xiaomi.com/images/emptyShopCar.jpg) 0 0 no-repeat;}
+.emptyShopCar_tips span{display:block;line-height:36px;font-family:"Microsoft YaHei";_font-weight:700;}
+.emptyShopCar_tips a{display:block;width:143px;height:42px;line-height:42px;text-align:center;margin-top:30px;background:url(http://p.www.xiaomi.com/images/shopCartNav.gif?201109203) no-repeat -42px -611px;text-indent:-9999px;overflow:hidden;}
+.emptyShopCar_tips a:active{background-position:-42px -653px;}
+/* E emptyShopCar*/
+/*S payOnline*/
+.payOnline_Box{padding:0 25px 50px;border-width:0 1px 1px;border-style:solid;border-color:#e0e0e0;}
+.payOnline_Tips{overflow:hidden;zoom:1;font-size:14px;color:#333333;padding:10px 15px;margin-top:25px;background-color:#F4F4F4;border:1px solid #E0E0E0;-moz-border-radius:3px 3px 0 0;-khtml-border-radius:3px 3px 0 0;-webkit-border-radius:3px 3px 0 0;border-radius:3px 3px 0 0;}
+.payOnline_Tips_con{float:left;margin-right:50px;}
+.payOnline_Tips_con strong{font-size:18px;}
+.payOnline_Tips_side{float:left;}
+.payOnline_Tips_side strong{color:#E94B01;font-size:18px;}
+.payOnline_Box h2{font-size:16px;padding:30px 0;}
+.payOnline_Box h3{font-weight:normal;font-size:14px;margin-bottom:30px;}
+.payOnline_other{height:80px;overflow:hidden;zoom:1;}
+.payOnline_other li{float:left;width:150px;height:45px;margin:0 20px 10px 0;}
+.payOnline_other li input,.payOnline_other li img{vertical-align:middle;}
+.payOnline_bank{height:280px;overflow:hidden;zoom:1;background-color:#ffffff;}
+.payOnline_btn{text-align:center;padding-top:30px;}
+.payOnline_btn input{background-position:-304px -415px;border:0;color:#ffffff;font-size:14px;width:154px;height:55px;border:0;cursor:pointer;}
+.payOnline_boxyBg{display:none;background-color:#000000;left:0;opacity:0.5;filter:alpha(opacity=50);position:absolute;top:0;z-index:990;}
+.payOnline_boxy{display:none;position:absolute;width:515px;background-color:#ffffff;z-index:999;padding:0 0 60px;left:50%;margin-left:-260px;top:400px;border:3px solid #eb6921;}
+.payOnline_boxy_tit{adding: 15px 15px 0 0;text-align:right;}
+.payOnline_boxy_tit a{background:url(http://p.www.xiaomi.com/images/bankPay_close.gif) no-repeat center;margin:5px 5px 0 0;display:inline-block;height:20px;width:20px;}
+.payOnline_boxy h3{color:#333333;font-size:14px;padding:20px 0 20px 40px;}
+.payOnline_boxy ul{padding-left:30px;}
+.payOnline_boxy ul li{background:url(http://p.www.xiaomi.com/images/bankPay_dian.gif) no-repeat left center;padding-left:10px;font-size:14px;color:#000000;line-height:24px;}
+.payOnline_boxy ul li a{color:#ec5c0d;text-decoration:underline;}
+/*E payOnline*/
+/*S userInfor*/
+.shopInfro{padding:20px 0 50px;}
+.shopInfro_tit{font-size:14px;height:30px;margin-top:10px;}
+.shopInfro_tit h2{font-size:16px;padding-right:10px;font-family:"Microsoft yahei";line-height:18px;}
+.shopInfro_tit h2,.shopInfro_tit p{float:left;}
+.shopInfro_tit p.item2{float:right;}
+.shopInfro_tit p.item1{padding-right:10px;}
+.shopInfro_tit p.item1 a{color:#f57921;}
+.shopInfro_tit_Tips{padding-bottom:10px;color:#666666;}
+.shopInfro_tit_noLogin{border:0;padding:0 0 10px;height:30px;line-height:30px;}
+.shopInfro_tit_noLogin p.item1 a{width:84px;height:30px;line-height:30px;color:#ffffff;font-weight:bold;display:inline-block;background-color:#f57921;text-align:center;vertical-align:middle;}
+.shopInfro_tit_noLogin p.item1 a:hover{text-decoration:none;background-color:#fc9953;}
+.shopInfro .m_f_email input,.shopInfro .m_f_username input,.shopInfro .m_f_mobile input{width:290px;}
+.shopInfro .m_f_address_details input{width:465px;}
+.m_f_address a{color:#336799;text-decoration:underline;}
+.m_f_address select{padding:6px;}
+.shopInforTime{padding-bottom:10px;}
+.shopInforTime li{font-size:14px;line-height:20px;margin-bottom:10px;}
+.shopInforTime li.shopInforTime_address_newItem{border-top:1px solid #E5E5E5;padding-top:10px;margin:10px 0;}
+.shopInforTime li input{vertical-align:middle;margin-right:3px;}
+.shopInforTime li span{color:#9a9a98;}
+.shopInforTime li ul{padding:5px 0 0 20px;}
+.shopInforTime li span.checkout_address_item{display:block;padding-left:16px;color:#333333;}
+.shopInfor_invoice{display:none;}
+.shopInfor_invoice_tit{height:30px;border-bottom:1px solid #cccccc;line-height:30px;overflow:hidden;margin-bottom:15px;}
+.shopInfor_invoice_tit li{float:left;padding:0 10px;margin-right:10px;background-color:#eaeaea;font-size:14px;cursor:pointer;}
+.shopInfor_invoice_tit li.current{background-color:#666666;color:#ffffff;}
+.shopInfor_invoice_con li{font-size:14px;margin-bottom:8px;}
+.shopInfor_invoice_con_class input{vertical-align:middle;}
+.shopInfor_invoice_con_name input{width:290px;border-color:#cccccc;border-style:solid;border-width:1px;font-size:14px;background-color:#f6f6f6;line-height:34px;height:34px;padding:0 4px;}
+.shopInfor_invoice_con_name input:hover,.shopInfor_invoice_con_name input:focus{border-color:#f37c3b;color:#000000;background-color:#ffffff;}
+.shopInfor_invoice_con_class label{margin-right:5px;}
+.shopInfor_invoice_dl{font-size:14px;line-height:24px;}
+.shopInfor_invoice_dl dt{}
+.shopInfor_invoice_dl dd{}
+.shopInfor_invoice_ulbox_list{font-size:14px;color:#333333;padding-bottom:5px;}
+.shopInfor_invoice_ulbox_list_lab{display:block;height:30px;line-height:30px;}
+.shopInfor_invoice_ulbox_list_lab span{color:#999999;}
+.shopInfor_invoice_ulbox_list_lab input{vertical-align:middle;margin-right:3px;}
+.shopInfor_invoice_con,.shopInfor_invoice_dl{padding-left:16px;}
+.shopInfor_btn span{display:block;}
+.shopInfor_btn span.item1{float:left;}
+.shopInfor_btn span.item2{float:right;}
+.shopInfor_btn{text-align:right;padding-top:10px;}
+.shopInfor_btn input{background-position:-186px -683px;width:117px;height:41px;vertical-align:middle;border:0;cursor:pointer;}
+.shopInfor_btn input:focus{background-position:-304px -683px;}
+.shopInfor_btn .item1{color:#666666;font-size:14px;line-height:54px;}
+.shopInfor_btn .item2 a{display:inline-block;background-position:-186px -641px;width:117px;height:41px;overflow:hidden;text-indent:-9999px;vertical-align:middle;margin-right:10px;}
+.shopInfor_btn .item2 a:active{background-position:-304px -641px;}
+.shopInfor_btn .item2 a span{display:none;vertical-align:middle;}
+.invoiceShowCompany{display:none;}
+.infor_newAdress{display:none;padding:0 0 15px;}
+.m_f_username input,.m_f_address_details textarea,.m_f_zipcode input,.m_f_mobile input,.m_f_address_select select{float:left;}
+.m_f_username .errorMessage,.m_f_address_details .errorMessage,.m_f_zipcode .errorMessage,.m_f_mobile .errorMessage,.m_f_address_select .errorMessage{float:left;padding:5px 0 0 10px;}
+.m_f_msg{clear:both;}
+.m_f_address_select select{margin-right:5px;}
+.shop_extraTotal .createdDyn{text-align:right;font-weight:bold;font-size:14px;}
+.shopCarTotal_userInfor{float:right;width:49%;padding:15px 15px 15px 0;line-height:26px;background:none;font-size:14px;}
+.checkout_event_comment{position:relative;border:1px solid #d7d7d7;padding:15px 15px 15px 0;margin-top:10px;text-align:right;}
+.checkout_event_comment input{vertical-align:middle;}
+.checkout_event_Tips{display:none;position:absolute;width:185px;padding:10px;border:1px solid #cccccc;background:url(http://p.www.xiaomi.com/zt/120315/checkout_event_7_bg.png) repeat-x left bottom;-moz-border-radius:6px;-webkit-border-radius:6px;border-radius:6px;-moz-box-shadow:2px 2px 6px #ccc;-webkit-box-shadow:2px 2px 6px #ccc;box-shadow:2px 2px 6px #ccc;}
+.checkout_event_Tips_icon{display:block;width:34px;height:19px;background:url(http://p.www.xiaomi.com/zt/120315/checkout_event_7_icon.gif) no-repeat center;}
+.checkout_event_Tips img{display:block;margin:0 auto;}
+.checkout_event_Tips dl{text-align:left;color:#666;font-size:14px;}
+.checkout_event_Tips dl dt{font-weight:bold;padding:15px 0 10px 0;}
+.checkout_event_Tips dl dd{line-height:20px;}
+.checkout_event_Tips_icon{position:absolute;left:90px;bottom:-18px;}
+.radioDisabled{color:#999999;}
+#payment label span{color:#999999;}
+#payment label span font{color:#cc0000;}
+#cardWrapper{height:36px;font-size:14px;}
+.createdDyn{margin-bottom:10px;}
+.createdDyn p{float:right;width:230px;border-bottom:1px solid #E5E5E5;color:#E94B01;}
+#cardWrapperSwitch{font-size:14px;color:#333333;}
+.cardNums{color:#E94B01;}
+.PromotionFrom{height:24px;line-height:24px;font-size:14px;margin:10px 0;}
+.PromotionFrom input{vertical-align:middle;margin-top:-2px;}
+.event_output,#cardWrapperSwitch{display:none;}
+#checkCard{width:100px;height:32px;font-size:14px;line-height:16px;}
+#switch{cursor:pointer;}
+/*E userInfor*/
+.errorSummary{color:red;line-height:24px;padding:10px;border:1px solid #ff6600;-moz-border-radius:5px;-khtml-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;box-shadow:0 0 10px #cccccc;}
+.errorMessage{color:red;}
+/*S productDetails*/
+.proWrap{background-color:#ffffff;margin:0px auto 20px;}
+.proCon_pics{float:left;width:470px;border:1px solid #e9e8e8;}
+.proCon_pics_midBox{height:470px;}
+.proCon_pics_midBox #zoom1 img{margin:0 auto;}
+.proCon{}
+.proCon_form{float:right;width:455px;}
+.proCon_pics_smallMain{height:78px;position:relative;padding-top:17px;background-color:#ffffff;-moz-border-radius:0 0 5px 5px;-khtml-border-radius:0 0 5px 5px;-webkit-border-radius:0 0 5px 5px;border-radius:0 0 5px 5px;}
+.proCon_pics_smallBox{width:414px;overflow:hidden;margin:0 auto;}
+.proCon_pics_smallBox ul{overflow:hidden;height:62px;}
+.proCon_pics_smallBox ul li{float:left;width:70px;height:62px;}
+.proCon_pics_smallBox ul li a{display:block;width:60px;height:60px;border:1px solid #cccccc;overflow:hidden;}
+/*.proCon_pics_smallBox ul li img{opacity:0.5;filter:alpha(opacity=50);}
+.proCon_pics_smallBox ul li:hover img,.proCon_pics_smallBox ul li.selected img{opacity:1;filter:alpha(opacity=100);}*/
+.proCon_pics_smallBox ul li.selected a{border:1px solid #ed5d0e;}
+.proCon_form h2{font-size:20px;padding:20px 0 5px;}
+.proCon_form_intro{color:#999999;font-size:14px;line-height:24px;}
+.proCon_form_cfl{border-bottom:1px solid #dfdfdf;padding:20px 0 5px;}
+.proCon_form_goodIndex{float:right;font-size:14px;padding-top:10px;color:#999999;}
+.proCon_form_price{float:left;font-size:14px;color:#333333;}
+.proCon_form_price strong{font-size:24px;color:#ed5f11;}
+.proCon_form_price strong span{font-size:18px;}
+.proCon_form_price strong.proCon_form_price_through{font-size:16px;color:#333;margin-right:10px;text-decoration:line-through;}
+.proCon_form_price strong.proCon_form_price_through span{font-size:16px;}
+.proCon_form_box{margin-top:20px;}
+.proCon_form_box h3{color:#999999;font-size:14px;height:16px;line-height:16px;clear:both;}
+.proCon_form_box_spe{padding-bottom:15px;}
+.proCon_form_box_link{display:block;float:left;border:1px solid #acacac;padding:4px;background-color:#ffffff;margin:0 10px 10px 0;cursor:pointer;}
+.proCon_form_box_link:hover{text-decoration:none;}
+.proCon_form_box_color a.selected,.proCon_form_box_size a.selected{border:2px solid #ed5d0e;padding:3px;}
+.proCon_form_box_size a.selected span{}
+.proCon_form_box_link span,.proCon_form_box_link p{display:block;float:left;}
+.proCon_form_box_color .proCon_form_box_link span{width:20px;height:20px;}
+.proCon_form_box_size .proCon_form_box_link span{width:40px;height:20px;text-align:center;line-height:20px;color:#333333;font-weight:bold;}
+span.color_white{border:1px solid #a5a5a5;background-color:white;}
+span.color_black{border:1px solid black;background-color:black;}
+.proCon_form_box_size .proCon_form_box_linkNogoods span,.proCon_form_box_color .proCon_form_box_linkNogoods p{text-decoration:line-through;color:#cccccc;}
+.proCon_form_box_linkNogoods{border-color:#cccccc;}
+.proCon_form_box_color a p{padding:3px 5px 0 8px;}
+.proCon_form_box_size a p{padding:3px 5px 0 8px;color:#333333;}
+.proCon_form_box_btn{color:#959595;font-size:14px;width:156px;float:right;}
+.proCon_form_box_btn a,.proCon_form_box_btnNogoods{display:block;background:url(http://p.www.xiaomi.com/images/shopCartNav.gif?201109203) no-repeat -186px -471px;width:156px;height:44px;border:0;text-indent:-99999px;overflow:hidden;vertical-align:middle;}
+.proCon_form_box_btnNogoods{background-position:-1px -525px;}
+.proDetails_pics,.proDetails_mione_para{display:none;}
+.proDetails_mione_para h3.tit{border-bottom:2px solid #CCCCCC;color: #FF6600;font-size:14px;padding:20px 0 8px 0;text-align:left;text-indent:25px;}
+.mione_pageDetails_img{text-align:center;}
+.mione_pageDetails_img img{margin-bottom:5px;}
+.proDetails_pics dl dt,.proDetails dl dd,.proDetails_pics_moreQues{font-size:14px;}
+.proDetails_pics dl dt{color:#666666;font-weight:bold;padding:10px 0;}
+.proDetails_pics dl dd{color:#666666;line-height:20px;margin-bottom:10px;}
+.proDetails_pics dl dd strong{color:#666666;}
+.proDetails_pics dl dd a,.proDetails_pics_moreQues a{color:#ec5e0f;}
+.proDetails_tips{font-size:16px;color:#333333;line-height:24px;display:none;}
+.proDetails .on{display:block;}
+.proNotice_tit{border-bottom:1px solid #e3e3e3;height:27px;margin:45px 0 25px;}
+#goodsImgs_load p{text-align:center;}
+.proNotice_tit li{height:26px;width:76px;float:left;padding:0 15px;text-align:center;line-height:26px;margin-right:5px;border-width:1px 1px 0;border-style:solid;border-color:#e3e3e3;-moz-border-radius:4px 4px 0 0;-khtml-border-radius:4px 4px 0 0;-webkit-border-radius:4px 4px 0 0;border-radius:4px 4px 0 0;}
+.proNotice_tit li a{font-size:12px;color:#666666;}
+.proNotice_tit li.selected{border-width:1px;border-style:solid;border-color:#e3e3e3 #e3e3e3 #ffffff;background-color:#ffffff;}
+.proNotice_tit li.selected a{color:#ff6633;font-weight:bold;}
+.proNotice_tit li a:hover{text-decoration:none;}
+.proNotice{margin-top:20px;}
+.proNotice_con{font-size:14px;color:#333333;line-height:24px;}
+.proNotice_con_tshirtSize{margin-bottom:10px;}
+.proNotice_con_tshirtSize h3{text-align:center;font-size:16px;}
+.proNotice_con_tshirtSize p{text-align:right;font-size:14px;color:#666;}
+.proNotice_con_tshirtSize table td{text-align:center;font-size:16px;color:#333333;padding:8px 0;}
+.proCon_form_box_nogoodsTips{display:block;padding-top:10px;}
+.proCon_form_box_Slected{font-size:14px;color:#ed5d0e;margin-top:20px;}
+.proCon_form_box_Slected p,.proCon_form_box_Slected span{display:inline;}
+.proCon_form_box_Slected span.color_white,.proCon_form_box_Slected span.color_black{display:none;}
+#controls span a{display:block;width:20px;height:20px;overflow:hidden;text-indent:-9999px;position:absolute;top:35px;cursor:default;}
+#prevBtn a{background-position:-443px -162px;left:5px;}
+#nextBtn a{background-position:-440px -137px;right:5px;}
+#prevBtn a.moveOn{background-position:-415px -162px;cursor:pointer;}
+#nextBtn a.moveOn{background-position:-415px -137px;cursor:pointer;}
+.outofstack_packagebox{display:none;}
+.outofstack .outofstack_packagebox{display:inline-block;height:14px;line-height:14px;}
+.proCon_form_box_list li{border:1px solid #bdbdbd;padding:10px 15px;margin-bottom:10px;background-color:#ffffff;cursor:pointer;width:423px;}
+.proCon_form_box_list li.outofstack{border:1px dotted #d6d6d6;cursor:default;opacity:0.5;filter:alhpa(opacity=50);}
+.proCon_form_box_list li.selected{border:2px solid #ed5d0e;background-color:#FFF1E7;opacity:1;filter:alhpa(opacity=100);cursor:default;position:relative;padding:9px 14px;}
+.proCon_form_box_list li.selected span.proCon_form_box_listP_icon{display:block;position:absolute;bottom:-1px;right:-1px;background:url(http://p.www.xiaomi.com/images/style_selected.gif) no-repeat center;width:21px;height:21px;}
+.proCon_form_mainGoods{width:360px;}
+.proCon_form_box_listW{float:left;color:#999999;}
+.proCon_form_box_listW strong{color:#000000;font-weight:normal;}
+.proCon_form_box_listW span{color:#999999;display:block;margin-top:5px;}
+.proCon_form_box_listP{float:right;text-align:right;}
+.proCon_form_box_listP strong{font-weight:normal;color:#cc0000;}
+.proCon_form_box_listP span{display:block;color:#999999;margin-top:5px;}
+.proCon_form_box_details{padding:0 0 10px;}
+.proCon_form_box_details a{color:#ea8a55;text-decoration:underline;line-height:14px;}
+.proCon_form_mione_Goodstips{text-align:right;height:33px;line-height:33px;}
+.proCon_form_mione_Goodstips a{color:#CC0000;}
+.proCon_form_box_form{padding:15px;border-width:1px;border-style:solid;border-color:#e5e5e5;background-color:#f6f6f6;}
+.proCon_form_box_form dl{width:245px;float:left;}
+.proCon_form_box_form dl dt{font-size:14px;color:#666666;font-weight:bold;padding:5px 0;}
+.proCon_form_box_form dl dd{color:#666666;line-height:20px;}
+.proCon_form_box_form_outOfStock dd{display:block;}
+.proCon_form_box_form_outOfStock dd.proCon_form_box_hasSelected,.proCon_form_box_form_outOfStock #iniSelectPrice{display:none;}
+.proCon_form_box_form_outOfStock dl dt{color:#aeaeae;}
+.proCon_imgShow_Link{float:left;margin-top:399px;background-color:#ffffff;border-width:1px 1px 1px 0;border-style:solid;border-color:#d8d8d8;width:14px;height:60px;padding:5px;line-height:14px;-moz-border-radius:0 3px 3px 0px;-khtml-border-radius:0 3px 3px 0px;-webkit-border-radius:0 3px 3px 0px;border-radius:0 3px 3px 0px;}
+.proCon_imgShow_Link a{color:#8e8e8e;}
+.proCon_imgShow_Link a:hover{color:#ea8a55;text-decoration:none;}
+.proDetails_minone_title{font-size:14px;color:#333333;}
+.proDetails_minone_titleCon td{background-color:#fcfcfc;border:1px solid #f2f2f2;padding:15px;color:#333333;font-size:14px;}
+.proDetails_minone_titleCon{margin-bottom:20px;}
+.proDetails_pics_goodshow dl dd{margin-bottom:15px;}
+.proDetails_pics_goodshow dl dd p{padding-left:17px;}
+.proCon_form_box_numSelect{padding:10px 0;}
+.proCon_form_box_numSelect select{padding:5px 2px;width:70px;}
+.proDetails_minone_pics .preview_wrap {position:relative;}
+.proDetails_minone_pics .preview_wrap a:hover{border:1px solid #F60;}
+.proDetails_minone_pics .preview_wrap .preview{position:absolute;display:block;background:url(about:blank);text-indent:-9999px;overflow:hidden;}
+.proDetails_minone_pics .preview_wrap .pre01 { width:134px;height:79px;top:292px;left:638px; }
+.proDetails_minone_pics .preview_wrap .pre02 { width:134px;height:79px;top:292px;left:789px;}
+.proDetails_minone_pics .preview_wrap .pre03,.proDetails_minone_pics .preview_wrap .pre04,.proDetails_minone_pics .preview_wrap .pre05,.proDetails_minone_pics .preview_wrap .pre06,.proDetails_minone_pics .preview_wrap .pre07 {width:62px;height:62px;top:292px;}
+.proDetails_minone_pics .preview_wrap .pre03{left:50px;}
+.proDetails_minone_pics .preview_wrap .pre04{left:122px;}
+.proDetails_minone_pics .preview_wrap .pre05{left:194px;}
+.proDetails_minone_pics .preview_wrap .pre06{left:266px;}
+.proDetails_minone_pics .preview_wrap .pre07{left:338px;}
+.boxyBg { display: none; background-color: #000000; left: 0; opacity: 0.2; filter: alpha(opacity=20); position: absolute; top: 0; z-index: 990; }
+.showBg { background: url(http://p.www.xiaomi.com/images/close01.png) no-repeat right top; display: none; left: 50%; margin-left: -350px;position: absolute; z-index: 999; }
+.showBg_tit { height: 34px; cursor: pointer; }
+.showBg_con { background: #333; padding: 15px; color: #999999; font-size: 14px; text-align: center; }
+/*E productDetails*/
+/*cloud zoom*/
+.cloud-zoom-lens {background-color:#ffffff;cursor:crosshair;}
+.cloud-zoom-big {border:1px solid #E9E8E8;overflow:hidden;position:absolute;top:-1px;left:470px;}
+.cloud-zoom-loading {color:white;background:#222;padding:10px;border:1px solid #ccc;}
+/* S style selected*/
+.styleSelCon{border-style:solid;border-width:1px 1px 0 1px;border-color:#e0e0e0;-moz-border-radius:3px;-khtml-border-radius:3px;-webkit-border-radius:3px;border-radius:3px;}
+.styleSel_tit{background-color:#f4f4f4;padding:10px;border-bottom:1px solid #e3e3e3;}
+.styleSel_tit_l{float:left;}
+.styleSel_tit_l span,.styleSel_tit_r span{color:#999999;}
+.styleSel_tit_l strong{font-size:18px;color:#333333;display:block;margin:0 0 10px 0;font-weight:normal;}
+.styleSel_tit_r a{color:#333333;font-weight:bold;font-size:14px;height:16px;line-height:16px;display:block;padding-top:30px;}
+.styleSel_tit_r{float:right;text-align:right;}
+.styleSel_tit_r span{display:block;margin:5px 0 10px 0;}
+.styleSel_list_l{float:left;width:180px;height:180px;margin-right:30px;background-color:#ffffff;border:1px solid #e3e3e3;}
+.styleSel_list_r{float:left;width:720px;}
+.styleSel_list{border-bottom:1px solid #e3e3e3;padding:30px 0 30px 30px;}
+.styleSel_list_r h3{color:#333333;font-size:14px;margin-bottom:15px;line-height:16px;}
+.styleSel_list_r_des{color:#333333;}
+.styleSel_list_r_des strong{color:#ed5d0e;font-weight:normal;}
+.styleSel_list_r_name dt{color:#999999;margin:10px 0;}
+.styleSel_list_r_name dd{padding-bottom:20px;}
+.proCon_form_goodsStyle:hover{text-decoration:none;}
+.styleSel_list_r_name dd p,.proCon_form_goodsStyle{display:block;width:120px;height:45px;float:left;margin:0 10px 10px 0;border:1px solid #BDBDBD;background-color:#ffffff;cursor:pointer;}
+.styleSel_list_r_name dd p img,.proCon_form_goodsStyle img{width:40px;height:40px;float:left;margin:2px 0 0 2px;}
+.styleSel_list_r_name dd p strong,.proCon_form_goodsStyle strong{float:left;color:#333333;padding-top:16px;font-size:12px;font-weight:normal;width:76px;text-align:center;}
+.styleSel_list_r_name dd p.outofstack,.styleSel_list_r_name dd a.outofstack{border:1px dashed #d6d6d6;cursor:default;opacity:0.5;filter:alhpa(opacity=50);}
+.styleSel_list_r_name dd p.selected,.styleSel_list_r_name dd a.selected{width:118px;height:43px;overflow:hidden;position:relative;background-color:#ffffff;border:2px solid #ED5D0E;cursor:default;opacity:1;filter:alhpa(opacity=100);}
+.styleSel_list_r_name dd p.selected span,.styleSel_list_r_name dd a.selected span,.selected .selectedIcon{display:block;position:absolute;bottom:-1px;right:-1px;background:url(http://p.www.xiaomi.com/images/style_selected.gif) no-repeat center;width:21px;height:21px;}
+.styleSel_list_Btn{padding:30px 0 40px 0;text-align:right;}
+.styleSel_list_Btn a{display:inline-block;margin-left:10px;}
+.styleSel_list_Btn a.item1{background-position:-342px -473px;width:118px;height:41px;}
+.styleSel_list_Btn a.item2{background-position:-185px -515px;width:118px;height:41px;}
+.styleSel_list_Btn a.item2:active{background-position:-303px -515px;}
+.styleSel_list_Btn a.item1:active{background-position:-370px -373px;}
+.styleSel_list_Btn_tips{display:none;color:#666;font-size:14px;height:36px;line-height:36px;font-weight:normal;}
+.proDetails_pics_goodshow h3{font-size:14px;color:#333333;padding:25px 0 15px;}
+.proDetails_pics_goodshow ul li{position:relative;width:231px;height:130px;float:left;margin-right:15px;border:1px solid #dfdfdf;-moz-border-radius:3px;-khtml-border-radius:3px;-webkit-border-radius:3px;border-radius:3px;}
+.proDetails_pics_goodshow ul li span{display:block;position:absolute;left:0;bottom:0;background:url(http://p.www.xiaomi.com/images/xmSale_30perAlpha.png) repeat center;width:100%;height:27px;line-height:27px;text-align:center;color:#ffffff;-moz-border-radius:0 0 3px 3px;-khtml-border-radius:0 0 3px 3px;-webkit-border-radius:0 0 3px 3px;border-radius:0 0 3px 3px;}
+/* S recommend */
+.recomm_main{padding:10px 0 0 20px;border-bottom:1px solid #e0e0e0;padding-bottom:25px;}
+.recomm_tit{padding:30px 0 0 20px;font-size:14px;}
+.recomm_tit span{color:#666;font-weight:normal;margin-left:10px;}
+.styleSel_tit_r a.styleSel_tit_r_nextLink{padding-top:0;}
+.styleSel_tit_l strong.styleSel_tit_acc{margin:0;font-size:14px;line-height:16px;}
+.styleSel_tit_recommend{background-color:#f4f4f4;padding:20px 20px;border-bottom:1px solid #e3e3e3;}
+.recomm_adv{width:295px;float:left;margin-right:10px;padding:5px;border:1px solid #ccc;cursor:pointer;}
+.recomm_adv_l,.recomm_adv_r{float:left;}
+.recomm_adv_l{width:140px;padding-top:6px;}
+.recomm_adv_r{width:130px;padding:10px 0 0 5px;}
+.recomm_adv_r h3{font-size:14px;font-weigth:bold;color:#333;margin-bottom:10px;}
+.recomm_adv_r h3 strong{color:#ff6600;margin-left:10px;}
+.recomm_adv_r dd{color:#666;height:18px;line-height:18px;overflow:hidden;}
+.recomm_adv_r dd span{float:left;}
+.recomm_adv_r dd strong{float:right;font-weight:normal;}
+.recomm_adv_r_sum strong{text-decoration:line-through;}
+.recomm_boxy{padding:20px;border-bottom:1px solid #E0E0E0;}
+.recomm_boxy h3{font-size:14px;padding:0 0 10px 0;}
+.styleSel_list_r_name dd p strong.recomm_goodname{padding-top:6px;line-height:14px;}
+.recommondMes{-moz-border-radius:5px;-webkit-border-radius:5px;background-color: #EEF6E7;border: 1px solid #D6E2CC;color:#93B468;margin:0 0 10px;}
+.recomm_scroll{height:115px;overflow:hidden;}
+.styleSel_list_r_name dd.recomm_goodsList p.selected{cursor:pointer;}
+.recomm_goodsList hr{clear:both;background-color:#fff;height:0;border:0;_border:1px solid #fff;_margin:0 0 -14px 0;_float:left;display:block;}/*处理hr ie6下的bug*/
+.recommSelWord{display:block;padding-top:10px;}
+/* E recommend */
+/* E style selected*/
+/*S download*/
+.xmdownload_box{border:1px solid #d9d8d8;background-color:#ffffff;-moz-border-radius:3px;-khtml-border-radius:3px;-webkit-border-radius:3px;border-radius:3px;}
+.xmdownload_box_b{background:#F4F4F4;padding:30px;margin-top:10px;}
+.xmdownload_box_top{border-bottom:1px solid #e5e5e5;}
+.xmdownload_box_cert{width:318px;height:210px;float:left;background-repeat:no-repeat;background-position:30px 32px;padding:30px 0 0 170px;}
+.xmdownload_box_cert_3,.xmdownload_box_cert_4{background-position:20px 40px;height:200px;padding-top:40px;}
+.xmdownload_box_cert_l{border-right:1px solid #d9d8d8;}
+.xmdownload_box_cert h2{font-size:14px;line-height:20px;margin-bottom:20px;}
+.xmdownload_box_cert_des{color:#7f7f7f;line-height:18px;}
+.xmdownload_box_cert_1{background-image:url(http://p.www.xiaomi.com/images/xmsale_download_01.jpg);}
+.xmdownload_box_cert_2{background-image:url(http://p.www.xiaomi.com/images/xmsale_download_05.jpg);}
+.xmdownload_box_cert_3{background-image:url(http://p.www.xiaomi.com/images/xmsale_download_03.jpg);}
+.xmdownload_box_cert_4{background-image:url(http://p.www.xiaomi.com/images/xmsale_download_04.jpg);background-position:30px 40px;}
+.xmdownload_box_cert p a{display:block;width:108px;height:37px;margin-top:25px;text-align:center;line-height:36px;font-size:14px;font-weight:bold;background-image:url(http://p.www.xiaomi.com/images/xmsale_download_icon2.gif);background-repeat:no-repeat;}
+.xmdownload_box_cert p a:hover{text-decoration:none;}
+.xmdownload_box_cert_1 p a,.xmdownload_box_cert_2 p a{background-position:-110px 0;color:#ffffff;}
+.xmdownload_box_cert_3 p a,.xmdownload_box_cert_4 p a{background-position:-1px 0;color:#333333;}
+.xmdownload_box_link li{width:450px;float:left;}
+.xmdownload_box_link li p{float:left;margin:5px 15px 0 0;background-image:url(http://p.www.xiaomi.com/images/xmsale_download_icon2.gif);background-repeat:no-repeat;}
+.xmdownload_box_link li dl{float:left;}
+.xmdownload_box_link li dl dt{line-height:18px;font-size:14px;color:#333333;font-weight:bold;margin-bottom:15px;}
+.xmdownload_box_link li dl dd a,.xmdownload_box_link li dl dd span, .xmdownload_box_link li dl dd{display:inline-block;font-size:14px;color:#999999;line-height:16px;}
+.xmdownload_box_link li dl dd a{color:#F05E13;}
+.xmdownload_box_link li dl dd span{margin:0 15px;}
+.xmdownload_box_link_l p{background-position:-221px -1px;width:36px;height:39px;}
+.xmdownload_box_link_r p{background-position:-263px -1px;width:34px;height:34px;}
+.recomm_main .selected{position:relative;background-color:#ffffff;border:2px solid #ED5D0E;padding:4px;}
+/*E download*/
+/*S comment */
+/* comment */
+.cfl, #comment .user_info, #comment_page ,.payOnline_Box .payAddress ul{ *zoom: 1; }
+.cfl:after, #comment .user_info:after, #comment_page:after, .payOnline_Box .payAddress ul:after { content: "\0020"; display: block; height: 0; clear: both; overflow: hidden; visibility: hidden; }
+#comment { overflow: hidden; }
+#comment li { -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; border-radius: 3px; background: #FFF; border: 1px solid #E9E8E8; padding: 15px; margin: 10px 0; }
+#comment .pic, #comment .user { float: left; display: inline; }
+#comment .pic { width: 35px; margin: 0 15px 0 0; }
+#comment .pic a { display: block; width: 35px; height: 35px; overflow: hidden; }
+#comment .user { width: 896px; color: #999; line-height: 18px; }
+#comment .user a { color: #E27228; font-size: 14px; font-weight: 700; }
+#comment .user span { float: right; font-size: 14px; }
+#comment .comment { font-size: 14px; line-height: 20px; margin: 16px 0 0; }
+#comment_page { -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; border-radius: 3px; -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1); -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1); -ms-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1); box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1); float: left; background: #FFF; padding: 6px; border: 1px solid #E9E8E8; }
+#comment_page a { display: -moz-inline-stack; display: inline-block; *display: inline; *zoom: 1; width: 20px; height: 20px; text-align: center; line-height: 20px; }
+#comment_page a.on { background: #E5E5E5; }
+#comment_btn { padding: 10px 0 0; text-align: right; clear: both; }
+/*E comment */
+/* enlei */
+.proCon_form_box_upCon{min-height:353px;_height:353px;}
+.proCon_form_box_upCon_mione{height:320px;}
+.proCon_form_box_upCon_unicom{min-height:302px;_height:302px;}
+#UserAddress_address{height:68px;}
+.proCon_form_box_btn #o_imprest{width:156px;height:52px;background:url(http://p.www.xiaomi.com/images/o_imprest.jpg) -24px 0 no-repeat;}
+/* payAddress for buy/confirm add user address */
+.payOnline_Box .payAddress {border-bottom:1px dotted #ccc;padding:16px 0;line-height:18px;}
+.payOnline_Box .payAddress li{float:left;display:inline;width:300px;}
+.payOnline_Box .payAddress h3{margin-bottom:6px;font-weight:700;}

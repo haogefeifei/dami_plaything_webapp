@@ -1,0 +1,172 @@
+@charset "utf-8";
+/* 初始化标签属性 */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,p,blockquote,th,td,textarea{margin:0;padding:0; font-size:12px; font-family:arial,"\5b8b\4f53";}table{border-collapse:collapse;border-spacing:0}ul,li,dl,dt,dd{list-style:none;}q:before,q:after{content:'';}abbr,acronym{border:0;font-variant:normal;}sup{vertical-align:baseline;}sub{vertical-align:baseline;}legend{color:#000;}.clear{clear:both}.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}.hidden{display:none;}
+* html .clearfix{zoom:1;} /* IE6 */*:first-child+html .clearfix {zoom:1;}.float_left{float:left}.float_right{float:right}a{text-decoration:none;}a:focus{outline:none;}img {border:0;}.f12{font-size:12px;}.f14{font-size:14px;}textarea{resize:none;}/*--去掉Google浏览器默认textarea可拖拽--*/
+body{background-color:#e1e9ff;}
+.topIcon span{display:block;border-width:3px 0 0;border-style:solid;height:0;}
+.topIcon span.float_left{border-color:#19B8F3;width:30%;}
+.topIcon span.float_right{border-color:#666666;width:70%}
+.logWrap{background:#f7efdb url(logBg000.webp) no-repeat center top;width:832px;margin:0 auto;padding:50px 65px 0;_margin-top:-15px;}
+.logWrap h1,.logCon h2,.logBtn,.regNow,.reg1Tit h2,.reg1Con li span.right,.reg1Con li span.wrong,.reg2Con h2,.reg2Con p a,.reg3Con h2 span.item2,.reg3Con h2 span.item3,.reg3Con ul li.item1,.pw02Btn a,.pw03Btn a,.boxyTit a,.logErrorIndex h3,.bindH,.bindItem{background-image:url(icon0000.gif);background-repeat:no-repeat;}/*--for icon img--*/
+.logWrap h1{width:130px;height:54px;background-position:0 0;}.logWrap h1 a{display:block;width:130px;height:54px;}
+.logBg{width:832px;background:url(logConBg.jpg) repeat-y;margin-top:26px;}
+.logBox{background:#fcfaf8 url(logbgcon.jpg) repeat-x left top;margin:0 5px;}
+.logBot{background:url(logBot00.webp) no-repeat left center;height:69px;}
+.logCon{background:url(logFen00.webp) no-repeat left top;width:300px;padding:40px 0 0 50px;}
+.logCon h2{width:192px;height:24px;background-position:0 -80px;}
+.logIcon{width:460px;height:400px;margin-top:40px;background:url(http://p.www.xiaomi.com/passport/images/logIndex.gif) no-repeat center top;}
+.logIcon a{width:460px;height:400px;display:block;}
+.logErrorIndex{width:415px;height:350px;margin-top:40px;padding-left:45px;}
+.logErrorIndex h3{background-position:-281px -370px;width:220px;height:34px;margin-bottom:20px;}
+.logErrorIndex dl dd,.logErrorIndex dl dt{font-size:14px;color:#333333;}
+.logErrorIndex dl dt{margin-bottom:45px;}
+.logErrorIndex dl dd{line-height:24px;background:url(ddIcon00.gif) no-repeat left 10px;padding-left:15px;margin-bottom:5px;}
+.logErrorIndex dl dd a{color:#F77616;text-decoration:underline;}
+.logInt{border:1px solid #d1d1d1;height:32px;line-height:32px;background:#ffffff url(inputBg0.gif) repeat-x left top;font-size:14px;text-indent:5px;}
+.logCon .logInt{width:215px;vertical-align:middle;ime-mode:disabled;color:#999999;}
+.logCon ul{padding-top:35px;}
+.logCon ul li{font-size:14px;margin-bottom:15px;}
+.logBtn{width:117px;height:44px;background-position:0 -225px;border:0;font-size:14px;cursor:pointer;}.logBtn:hover,.logBtn:focus{background-position:-117px -225px;}
+.logCon ul li.logForm{padding-left:45px;font-size:12px;}
+.logForm input{vertical-align:middle;margin-right:5px;}
+.logFormCheck input{width:14px;height:14px;}
+.logForm a{color:#f77616;font-size:14px;margin-left:5px;}
+.logInfor{color:#C82424;padding-left:45px;}
+.logInfor ul {margin:0;padding:0;}
+.logInfor ul li {font-size: 12px;}
+.logTips{border-top:1px solid #e2e2e2;margin:40px 40px 0 0;padding:40px 0 10px 0;}
+.logTips span{font-size:14px;color:#333333;margin-right:15px;}
+.regNow{display:inline-block;border:0;cursor:pointer;width:115px;height:41px;line-height:41px;background-position:-234px -225px;font-size:14px;text-align:center;color:#ffffff;}
+.regNow:hover{background-position:-349px -225px;}
+.logFooter{border-top:1px solid #fbaa6d;font-size:14px;color:#666666;text-align:center;width:880px;margin:100px auto 0;padding:25px 0 80px;line-height:24px;}
+.logFooter a,.logFooter span{color:#fa7310;}.logFooter a:hover{text-decoration:underline;}
+.logWrapIcon{background:url(logBg000.gif) no-repeat 65px top;}
+/*-S regist01-*/
+.reg1Tit{padding:45px 175px 20px 185px;color:#333333;}
+.reg1Tit h2{background-position:-194px -80px;width:144px;height:23px;}
+.reg1Tit h2.checkMails{background-position:-405px -300px;width:144px;height:23px;}
+.reg1Tit p{width:170px;text-align:right;padding-top:8px;}
+.reg1Tit a{color:#fa7310;}
+.reg1Con{padding:15px 0 25px 185px;}
+.reg1Con li {height:68px;}
+.reg1Con li label,.reg1Con li input,.reg1Con li span{display:inline-block;font-size:14px;color:#333333;}
+.reg1Con li input{width:375px;vertical-align:middle;}
+.reg1Con li input.reg1LogInt{width:195px;}
+.reg1Con li label{width:85px;text-align:right;}
+.reg1Con li label strong{color:#fa7310;font-size:12px;}
+.reg1Con li div{color:#c0c0c0;padding:5px 0 15px 85px;}
+.reg1Con li div.errorMessage{color:#c82424;}
+.bindCon div.errorMessage{display: inline-block;}
+.reg1Con li div.right{color:#333333;}
+.reg1Con li div a{color:#fa7310;text-decoration:underline;}
+.reg1Con li span{width:17px;height:17px;margin-left:15px;vertical-align:middle;}
+.reg1Con li span.right{background-position:-484px -60px;}
+.reg1Con li span.wrong{background-position:-487px -86px;}
+.reg1YZM{vertical-align:middle;margin-left:30px;}
+.reg1Btn{padding:10px 0 20px 270px;}
+/*-E regist01-*/
+/*-S regist02-*/
+.reg2Con,.reg3Con{padding:50px 185px 20px;}
+.reg2Con h2{background-position:0 -54px;width:448px;height:24px;margin-bottom:10px;}
+.reg2Con p{color:#333333;font-size:14px;}
+.reg2Con p strong{color:#fa7310;font-weight:normal;}
+.reg2Con p a{display:block;width:172px;height:51px;margin:50px auto;line-height:51px;background-position:0 -130px;text-align:center;color:#ffffff;font-size:14px;}
+.reg2Con p a:hover{background-position:-172px -130px;}
+.reg2Con dl{border-top:1px solid #e2e2e2;}
+.reg2Con dl dt,.reg2Con dl dd{font-size:14px;color:#333333;}
+.reg2Con dl dt{padding:35px 0 15px 0;}
+.reg2Con dl dd{line-height:24px;}
+.reg2Con dl dd a,.reg3Con h3 a,.pw01Tips dl dd a,.pw3Infor a{color:#fa7310;text-decoration:underline;}.reg2Con dl dd a:hover,.reg3Con h3 a:hover,.pw01Tips dl dd a:hover,.pw3Infor a:hover{color:#ce5403;}
+/*-E regist02-*/
+/*-S regist03-*/
+.reg3Con h2 span{display:block;float:left;}
+.reg3Con h2 span.item1{color:#fa7310;font-weight:bold;font-size:24px;margin-right:10px;}
+.reg3Con h2 span.item2{width:245px;height:24px;background-position:0 -104px;margin-top:3px;}
+.reg3Con h2 span.item3{width:245px;height:24px;background-position:-256px -267px;margin-top:3px;}
+.reg3Con h2 span.item4{color:#19b8f3;font-weight:bold;font-size:16px;line-height:36px;margin-right:10px;text-align:center;}
+.reg3EM{font-size:14px;color:#333333;padding-top:10px;}
+.reg3em label {width:80px;display:inline-block;}
+.reg3EM strong{color:#fa7310;font-weight:normal;}
+.reg3AutoGo{color:#999999;font-size:14px;padding:50px 0;}
+.reg3AutoGo a{color:#19B8F3;}
+.reg3AutoGo a:hover{text-decoration:underline;}
+.reg3Con h3{border-top:1px solid #e2e2e2;padding:50px 0 35px 0;font-size:14px;}
+.reg3Con ul{overflow:hidden;zoom:1;height:85px;}
+.reg3Con ul li{float:left;}
+.reg3Con ul li.item1{height:60px;width:80px;}
+.reg3Con ul li.item1 a{display:block;height:50px;width:80px;}
+.reg3Con ul li.itemXiaomi{background-position:25px -351px;}
+.reg3Con ul li.itemMiui{background-position:-60px -273px;}
+.reg3Con ul li.itemMiliao{background-position:15px -277px;}
+.reg3Con ul li.item2{width:365px;color:#666666;}
+.reg3Con ul li.item2 h4 a{color:#333333;font-size:14px;}.reg3Con ul li.item2 h4 a:hover{color:#FA7310;}.reg3Con ul li.item2 p{font-size:14px;line-height:18px;margin-top:2px;}
+/*-E regist03-*/
+/*-S password01-*/
+.reg1Tit h2.pwTit{background-position:-251px -104px;width:97px;height:23px;}
+.reg1Tit h2.saTit{background-position:-401px -464px;width:97px;height:23px;}
+.pw01Btn{padding:5px 0 50px 270px;}
+.pw01Btn .logBtn{display:block;line-height:44px;text-align:center;color:#000000;}
+.pw01Tips{border-top:1px solid #e2e2e2;padding:30px 0 0 0;margin:0 185px;}
+.pw01Tips dl{color:#333333;}
+.pw01Tips dl dd{line-height:20px;margin:5px 0 20px 0;}
+/*-E password01-*/
+/*-S password02-*/
+.pw02Infor{padding:0 0 0 185px;color:#333333;font-size:14px;line-height:24px;}
+.pw02Infor strong,.pw02Infor a{color:#fa7310;font-weight:normal;}.pw02Infor a:hover{text-decoration:underline;}
+.pw02Btn a{display:block;background-position:-353px 0;width:147px;height:44px;line-height:44px;text-align:center;color:#000000;font-size:14px;margin:30px 0 35px 185px}.pw02Btn a:hover{background-position:-206px 0;}
+/*-E password02-*/
+/*-S password03-*/
+.reg1Tit h2.pw3Tit{background-position:-349px -104px;width:97px;height:23px;}
+.reg1Tit h2.pw4Tit{background-position:-349px -104px;width:97px;height:23px;}
+.pw3Infor{line-height:24px;color:#333333;font-size:14px;padding:0 0 10px 185px;}
+.pw3Infor strong{color:#fa7310;font-weight:normal;}
+.pw03Btn a{display:block;background-position:0 -181px;width:202px;height:44px;line-height:44px;text-align:center;color:#000000;font-size:14px;margin:0 0 35px 255px}.pw03Btn a:hover{background-position:-202px -181px;}
+.reg1Con li label.pwLabel{width:65px;text-align:left;}
+/*-E password03-*/
+.reg1Tit h2.mu4Tit{background-position:-351px -54px;width:97px;height:23px;}
+.pw4Con{height:260px;}
+.Emailbox{position:absolute;display:none;border:1px solid #d1d1d1;width:215px;background-color:#ffffff;}
+.Emailbox dt,.Emailbox dd{height:24px;line-height:24px;padding:0 5px;width:205px;overflow:hidden;text-align:left;}
+.Emailbox dt{background-color:#EEEEEE;color:#999999;}
+.Emailbox dd{cursor:pointer;margin-left:0!important;*margin-left:-40px!important;_margin-left:-40px;}
+.Emailbox dd.current{background-color:#fa7310;color:#ffffff;}
+.boxy{position:absolute;left:50%;top:50%;margin-left:-225px;margin-top:-150px;width:450px;height:300px;padding:6px;background:url(http://p.www.xiaomi.com/passport/images/boxyBg.png) repeat;-moz-border-radius:5px;-khtml-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;}
+.boxyIn{background-color:#ffffff;height:300px;opacity:0.8;filter:Alpha(Opacity=90);}
+.boxyIn .reg1Con{padding:15px;}
+.boxyIn .reg1Con li input{width:330px;}
+.boxyIn .reg1Con li label{width:65px;}
+.boxyIn .reg1Con li p{padding:5px 0 15px 65px;}
+.boxyIn .pw02Btn a{margin:0 auto;}
+.boxyTit{height:50px;position:relative;}
+.boxyTit a{display:block;position:absolute;right:5px;top:5px;width:14px;height:14px;background-position:-490px -128px;}
+.boxyTit h3{font-size:14px;text-align:center;padding-top:20px;}
+.bindTitle{color:#FA7310;font-size:16px;font-weight:bold;line-height:36px;}
+/*add 0711*/
+.bindBox{padding-top:15px;}
+.bindH{background-position:-90px -406px;width:411px;height:26px;margin:0 auto 45px;font-size:14px;}
+.bindConL,.bindConR{float:left;}
+.bindConR{width:430px;padding-left:50px;}
+.bindConL{border-right:1px dotted #ffd28e;height:270px;width:300px;padding-left:40px;}
+.bindCon h3{font-size:14px;color:#333333;padding-bottom:24px;}
+.bindCon dl dt{font-size:14px;color:#666666;padding-bottom:24px;}
+.bindCon dd span,.bindCon dd input,.bindCon dd strong{display:inline-block;height:30px;line-height:30px;font-size:14px;}
+.bindCon dd strong{color:#fd7a22;font-weight:bold;}
+.bindCon h3 strong{color:#fd7a22;font-weight:bold;}
+.bindCon dd span.item1{width:80px;text-align:right;}
+.bindBtn span.item1{display: inline-block; width:80px;text-align:right;}
+.bindCon dd{margin-bottom:10px;}
+.bindCon dd .logInt{width:240px;}
+.bindBtn{padding:10px 0 0 0;}
+.bindBtn .item{color:#333333;text-decoration:underline;margin-left:10px;}
+.bindTips{color:red;font-size:12px;margin-top:20px;}
+.bindItem{background-position:-253px -435px;width:246px;height:24px;margin-top:3px;}
+.bindGo{color:#999999;font-size:14px;padding:20px 0 50px 0;}
+.bindConR dd select{border:1px solid #d1d1d1;font-size:14px;padding:5px;width:241px;}
+
+.passportBind_weibo{height:32px;overflow:hidden;*zoom:1;padding:15px 0;}
+.passportBind_weibo dt,.passportBind_weibo dd{float:left;padding-right:30px;}
+.passportBind_weibo dt{font-size:14px;font-weight:bold;color:#333333;line-height:32px;padding-right:20px;}
+.passportBind_weibo dd a{display:block;background-image:url(http://p.www.xiaomi.com/images/passportWeibo_icon_01.gif);background-repeat:no-repeat;height:32px;line-height:32px;padding-left:36px;color:#333333;}
+.passportBind_weibo dd a:hover{color:#FA7310;}
+.passportBind_weibo_sina a{background-position:0 0;}
+.passportBind_weibo_qq a{background-position:0 -53px;}

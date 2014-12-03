@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC 
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN" 
+    "http://struts.apache.org/dtds/struts-2.0.dtd" >
+<struts>
+	<package name="product" extends="struts-default">
+	    
+	     <action name="allpeijian" class="ProductAction">
+			<result name="success">/peijianall.jsp</result>
+				  
+		</action>
+		
+		<action name="pageall" class="ProductAction" method="showProduct">
+			<result name="success">/peijianall.jsp</result>
+				  
+		</action>
+		<action name="find" class="ProductAction" method="findByName">
+			<result name="success">/peijianall.jsp</result>
+				  
+		</action>
+		
+		<!-- 显示商品详细信息 -->
+	   <action name="showinfo" class="ProductAction" method="showProductInfo">
+			<result name="success">/product.jsp</result>
+				  
+		</action>
+		
+	   <!-- 显示商品图集 -->
+	   <action name="productgetImg" class="ProductAction" method="productGetImg">
+			<result name="success">/productImg.jsp</result>
+				  
+		</action>
+		
+		
+		<action name="peijian" class="ProductAction" method="showPeijianInfo">
+			<result name="success">/peijian.jsp</result>
+				  
+		</action>
+		
+		<action name="psort" class="ProductAction" method="findPsortProduct">
+			<result name="success">/peijianall.jsp</result>
+				  
+		</action>
+	</package>
+	
+	
+</struts>
+
+ 

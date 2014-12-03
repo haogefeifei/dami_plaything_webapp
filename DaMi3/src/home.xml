@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC 
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN" 
+    "http://struts.apache.org/dtds/struts-2.0.dtd" >
+<struts>
+	<package name="home" extends="struts-default">
+	    <!-- 显示添加商品-->
+	    <action name="showAdd" class="AdminHomeAction" method="showAddProduct">
+			<result name="success">/files/AddProduct.jsp</result>			
+		</action>		
+		
+	    <!-- 显示商品列表（管理）-->
+	    <action name="showPlist" class="AdminHomeAction" method="showProductList">
+			<result name="success">/files/listShop.jsp</result>			
+		</action>
+		
+	    <!-- 商品列表搜索（管理）-->
+	    <action name="findPlist" class="AdminHomeAction" method="findProductList">
+			<result name="success">/files/listShop.jsp</result>			
+		</action>
+	    
+	    <!-- 添加新商品 -->
+	    <action name="adminaddproduct" class="AdminHomeAction" method="addProduct">
+            <interceptor-ref name="fileUpload">
+                <!-- 通过动态设置allowTypes的属性来动态指定允许上传的文件类型 -->
+                <param name="allowTypes">
+                    image/png,image/gif,image/jpeg,
+                    application/zip,application/vnd.ms-word,text/plain        
+            </param>
+                <param name="maximumSize">50485760</param>
+            </interceptor-ref>
+            <interceptor-ref name="defaultStack" />
+            <!-- 动态设置Action的属性值 -->
+            <param name="imageMainPath">/imagemain</param>
+            <param name="imagePath">/image</param>
+            <param name="image_smallPath">/image_small</param>
+            <param name="file_zipPath">/file</param>
+            <!-- 配置Struts2默认的视图资源 -->
+            <result  type="redirect">/files/listShop.jsp</result>
+             <!-- 配置该应用的input逻辑视图 -->
+            <result name="input">/testIndex.jsp</result>
+		</action>
+		
+	    <!-- 进入订单管理列表（管理）-->
+	    <action name="orderlist" class="AdminOrderAction">
+			<result name="success">/files/orderAll1.jsp</result>			
+		</action>
+		
+	    <!-- 发货-->
+	    <action name="delivergoods" class="AdminOrderAction" method="processing">
+			<result name="success"  type="redirect">/files/orderAll1.jsp</result>			
+		</action>
+		<!-- 签收-->
+	    <action name="sign" class="AdminOrderAction" method="sign">
+			<result name="success"  type="redirect">/files/orderAll1.jsp</result>			
+		</action>
+		<!-- 关闭-->
+	    <action name="off" class="AdminOrderAction" method="off">
+			<result name="success"  type="redirect">/files/orderAll1.jsp</result>			
+		</action>
+		
+	    <!-- 关闭-->
+	    <action name="OfindByStatus" class="AdminOrderAction" method="findByStatus">
+			<result name="success"  type="redirect">/files/orderAll1.jsp</result>			
+		</action>
+		 
+	</package>
+</struts>
+
+ 

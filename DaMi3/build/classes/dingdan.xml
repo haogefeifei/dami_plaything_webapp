@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC 
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN" 
+    "http://struts.apache.org/dtds/struts-2.0.dtd" >
+<struts>
+
+<package name="ajax" extends="json-default">
+	<action name="it_*" class="DingdanAction" method="{1}">
+		<result name="sell"  type="json">
+			<param name="root">list</param>
+			<param name="excludeProperties">\[\d+\]\.phone,\[\d+\]\.psort,\[\d+\]\.indentproducts,\[\d+\]\.cartItems</param>
+		</result>
+	</action>
+</package>
+
+
+	<package name="dingdan" extends="struts-default">
+	    
+	    <!-- 我的订单 -->
+	    <action name="mydingdan" class="DingdanAction">
+			<result name="success">mydingdan.jsp</result>
+			<result name="login">login6.jsp</result>
+		</action>
+		
+	    <!-- 进入订单确认 -->
+		<action name="addindent" class="DingdanAction" method="addIndent">
+			<result name="success">dingdan2.jsp</result>
+			<result name="nologin">login.jsp</result>
+			<result name="error">error.jsp</result>
+		</action>
+		
+		 <!-- 订单确认 -->
+		 <action name="indent" class="DingdanAction" method="okIndent">
+			<result name="success">dingdan4.jsp</result>
+			<result name="none">dingdan3.jsp</result>
+		</action>
+		 
+		 <!-- 进入订单详情 -->
+		 <action name="indentinfo" class="DingdanAction" method="indentInfo">
+			<result name="success" type="redirect">mydingdaninfo.jsp</result>
+			<result name="login"  type="redirect">login6.jsp</result>
+		</action>
+		
+		 <!-- 后台进入订单详情 -->
+		 <action name="indentinfo2" class="DingdanAction" method="indentInfo">
+			<result name="success" type="redirect">dingdaninfo.jsp</result>
+			<result name="login"  type="redirect">login6.jsp</result>
+		</action>
+		 <!-- 按状态查询我的订单 -->
+		 <action name="indentfind" class="DingdanAction" method="findByStatus">
+			<result name="success">mydingdan.jsp</result>
+			<result name="login">login6.jsp</result>
+		</action>
+		<!-- 按状态查询我的订单 -->
+		 <action name="calloff" class="DingdanAction" method="calloff">
+			<result name="success">mydingdan.jsp</result>
+			<result name="login">login6.jsp</result>
+		</action>
+	    
+	</package>
+</struts>
+
+ 

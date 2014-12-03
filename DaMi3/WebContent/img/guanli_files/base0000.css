@@ -1,0 +1,532 @@
+/* b2c , 2011-10-10 */
+body, h1, .hgroup h2, h2, h3, h4, h5, h6, blockquote, p, pre, dl, dd, menu, ol, ul, caption, th, td, form, fieldset, legend, input, button, textarea { margin: 0; padding: 0; }
+h1, .hgroup h2, h2, h3, h4, h5, h6 { font-size: 100%; }
+menu, ol, ul { list-style: none; }
+table { border-collapse: collapse; border-spacing: 0; }
+fieldset, img { border: 0; }
+address, cite, dfn, em, var { font-style: normal; }
+code, kbd, pre, samp { font-family: 'courier new',courier,monospace; }
+input, button, textarea, select { font-size: 100%; }
+abbr[title] { border-bottom: 1px dotted; cursor: help; }
+a { outline: none; text-decoration: none; }
+body, input, button, textarea, select, option, optgroup { font: 12px/1 arial, \5b8b\4f53, sans-serif; }
+/* color */
+.ff-MY, .menu, .contact, .goods_name, .goods_cat, .goods_price { font-family: "Microsoft YaHei"; }
+.f14 { font-size: 14px; }
+.fw4 { font-weight: 400; }
+.fw7, .menu, .contact, .goods_name, .goods_cat, .goods_price { font-weight: 700; }
+a { color: #333; }
+a:hover { text-decoration: underline; }
+html { overflow-y: scroll; background: #ffffff; }
+.container { width: 980px; margin: 0 auto; }
+/* header */
+.menu,#mainMenu_top,#mainMenu_top li,#mainMenu_top li a.on,#mainMenu_top li a:hover{background-image:url(xiaomi_i.png);background-color:transparent;}
+#header {height:78px;overflow:hidden;position:relative;}
+#header .logo { position: absolute; top:10px; left: 0; }
+#header .logo a { display: block; width:157px; height:59px; text-indent: -999px; overflow: hidden; background:url(xiaomi_b.gif) no-repeat -751px -2px; }
+.menu{width:823px;height:59px;position:absolute;top:10px;left:157px;background-position:0 -61px;background-repeat:repeat-x;}
+#mainMenu_top{margin-left:3px;width:820px;height:59px;font-size:14px;font-weight:bold;background-position:817px 0;background-repeat:no-repeat;}
+#mainMenu_top li{height:59px;float:left;display:inline-block;background-position:0 -61px;background-repeat:repeat-x;}
+#mainMenu_top li a{display:block;height:36px;width:101px;padding-top:20px;border-right:1px solid #ececec;}
+#mainMenu_top li a:hover{background-position:0 -122px;background-repeat:repeat-x;}
+#mainMenu_top li a.on{background-position:0 -183px;background-repeat:repeat-x;}
+#mainMenu_top li a span{ display:block;width:38px;height:17px;margin:0 auto;text-indent: -999em;overflow:hidden; background-image:url(xiaomi_b.gif);}
+#mainMenu_top li.m1 a span {background-position: 0 0; }
+#mainMenu_top li.m1 a:hover span { background-position: 0 -22px; }
+#mainMenu_top li.m1 a.on span { background-position: 0 -44px; }
+#mainMenu_top li.m2 a span {width:66px;background-position:-86px 0; }
+#mainMenu_top li.m2 a:hover span { background-position:-86px -22px; }
+#mainMenu_top li.m2 a.on span { background-position:-86px -44px; }
+#mainMenu_top li.m3 a span { background-position:-205px 0; }
+#mainMenu_top li.m3 a:hover span { background-position:-205px -22px; }
+#mainMenu_top li.m3 a.on span { background-position:-205px -44px; }
+#mainMenu_top li.m4 a span { background-position:-305px 0; }
+#mainMenu_top li.m4 a:hover span { background-position:-305px -22px; }
+#mainMenu_top li.m4 a.on span { background-position:-305px -44px; }
+#mainMenu_top li.m5 a span { background-position:-406px 0; }
+#mainMenu_top li.m5 a:hover span { background-position:-406px -22px; }
+#mainMenu_top li.m5 a.on span { background-position:-406px -44px; }
+#mainMenu_top li.m6 a span { background-position:-506px 0; }
+#mainMenu_top li.m6 a:hover span { background-position:-506px -22px; }
+#mainMenu_top li.m7 a span {background-position:-608px 0; }
+#mainMenu_top li.m7 a:hover span { background-position:-608px -22px; }
+#mainMenu_top li.m8 a span {background-position:-707px 0; }
+#mainMenu_top li.m8 a:hover span {background-position:-707px -22px; }
+#mainMenu_top li.m8 a{border:0;}
+#regArea{color:#999;height:20px;padding-top:10px;}
+#regArea .user { padding-right: 14px;display:inline-block;line-height:12px!important;_line-height:15px;border-right: 1px solid #CCC; }
+#regArea a { display: -moz-inline-stack; display: inline-block; *display: inline; *zoom: 1; padding: 0 10px; border-right: 1px solid #CCC; color: #999;line-height:12px!important;*line-height:14px!important;_line-height:15px;}
+#regAreaa .highlight { color: #F05E13; font-weight: 700; }
+#regArea a:hover { text-decoration: none; color: #F60; }
+#regArea a.cart {background:url(xiaomi_b.gif) -915px -31px no-repeat; padding-left: 34px; padding-right: 0; border: none; }
+#regArea a.cart:hover span { font-weight: 400; }
+#regArea ul{width:980px;margin:0 auto;}
+.regArea_l{float:left;}
+.regArea_r{float:right;}
+#regArea a.reg_done{padding:0 0 0 10px;border:none;}
+/* footer */
+.promise, #footer, .copyright { width: 980px; margin: 0 auto; }
+#footer_wrap { background: #F8F7F7; overflow: hidden; margin: 60px 0 0; *zoom: 1; }
+#footer { color: #666; padding: 16px 0 20px; position: relative; border-top: 1px solid #E9E8E8; border-bottom: 1px solid #E9E8E8; }
+#footer .nav { font-size: 12px; padding-left: 17px; }
+#footer .nav a { color: #343434; }
+#footer .nav dt { color: #656565; font-size: 15px; font-weight: 700; line-height: 30px;  }
+#footer .nav dl { float: left; display: inline;  width:200px; }
+#footer .nav dd { margin: 10px 0 0;  }
+#footer .nav dd a{margin-right: 12px;line-height:14px;}
+#footer .nav .onlineservice dd{float:left; height:15px;}
+#footer .nav .onlineservice{margin: 0 80px 0 0;}
+#footer .nav .weibo{margin: 0 50px 0 0;}
+#footer .nav .xmhome{margin: 0 92px 0 0; }
+#footer .nav .xmphone{width:140px;color:#343434;}
+#footer .nav .xmphone dt{font-size:20px;color:#323232;font-weight: 500;}
+#footer .nav .xmphone dd{padding-left:6px;}
+#footer .service { font-family: "Microsoft YaHei"; position: absolute; color: #999; top: 50px; left: 712px; line-height: 18px; text-align: right; }
+#footer .service span { font-size: 24px; }
+#footer .service strong { font-size: 22px; font-weight: 400; color: #666; display: block; margin: 6px 0 0; }
+#footer .service .working_time { font-size: 12px; }
+.copyright { color: #999; text-align: center; margin: 20px auto; }
+.copyright a { border-right: 1px solid #989898; padding: 0 14px; color: #666; }
+.copyright p a{border:0;padding:0 5px;color:#999999;}
+.copyright a.xiaomi_lnk { padding-left: 0; }
+.copyright a.miliao_lnk { border: none; }
+.copyright span { margin-left: 20px; }
+.promise { background: url(xiaomi_b.gif) no-repeat 0 -68px;position:relative;height:30px;padding:0 0 20px;overflow:hidden;margin-top:80px;}
+.promise a { display: block;  height: 30px; text-indent: -999em; overflow: hidden; }
+.promise li { position: absolute; top: 0px; }
+.promise li.pr1 { left: 280px; }
+.promise li.pr1 a{width: 120px;}
+.promise li.pr2 { left: 432px; }
+.promise li.pr2 a{width: 130px;}
+.promise li.pr3 { left: 594px; }
+.promise li.pr3 a{width: 186px;}
+.promise li.pr4 { left: 815px; }
+.promise li.pr4 a{width: 165px;}
+#ol_service{position:absolute;top:14px;left:880px;display:block;width:81px;height:103px;background:url(http://p.www.xiaomi.com/images/ol_service.png) 0 0 no-repeat;text-indent:-999em;overflow:hidden;}
+/* S m_product */
+.m_product .m_p_photo, .m_product .m_p_info { float: left; display: inline; }
+/* E m_product */
+/* S m_product_b */
+.m_product_a .m_p_photo, .m_product_a .m_p_info { float: none; display: block; }
+/* E m_product_b */
+/* S m_form */
+.m_form {font-size:14px;line-height:24px;}
+.m_form label {display:block;}
+.m_form label span {color:#DF5E41;font-size:18px;vertical-align:middle;margin: 0 2px; }
+.m_form input, .m_form textarea,#card{border-color:#cccccc; border-style: solid; border-width: 1px; font-size: 14px; background-color: #f6f6f6; }
+.m_form select{font-size:14px;}
+#card{width:180px;}
+.m_form input, .m_form textarea,#card{line-height:30px;height:30px;padding:0 4px;  }
+.m_form select {padding: 8px 4px;}
+.m_form input:hover, .m_form textarea:hover, .m_form input:focus, .m_form textarea:focus,#card:hover,#card:focus{ border-color: #f37c3b; color: #000000; background-color: #ffffff; }
+.m_form .m_f {margin-bottom:10px; }
+.m_form .m_f_address_details {margin:10px 0;}
+.m_form .m_f_msg_error,.m_form .m_f_msg_ok {display:none;}
+.m_form .m_f_msg{color:#B2B2B2;font-size:12px;}
+.m_form .m_f_btn input{color:#FFF;background:#F37520;border: none; font-weight: 700; padding: 6px 20px; cursor: pointer; }
+.m_form .m_f_btn_a input{background:#CCC;color:#FFF;}
+.m_form .m_f_email input, .m_form .m_f_username input{width:290px;}
+.m_form .m_f_address_details textarea{width:400px;}
+.m_form .m_f_zipcode input{width:100px;}
+/* E m_form */
+.cfl, #footer .nav { *zoom: 1; }
+#header .menu ul, #header .reg ul, #header .nav ul { *zoom: 1; }
+.m_product{*zoom:1;}
+.cfl:after, #footer .nav:after { content: "\0020"; display: block; height: 0; clear: both; overflow: hidden; visibility: hidden;}
+#header .menu ul:after, #header .reg ul:after, #header .nav ul:after { content: "\0020"; display: block; height: 0; clear: both; overflow: hidden; visibility: hidden; }
+.m_product:after { content: "\0020"; display: block; height: 0; clear: both; overflow: hidden; visibility: hidden;}
+/*for para table*/
+.paraTable tr { background-color: #ededed; color: #999999; font-size: 14px; }
+.paraTable tr.even { background-color: #f9f8f8; }
+.paraTable tr th, .paraTable tr td { padding: 10px 0; }
+.paraTable tr th { color: #333333; text-indent: 25px; width: 20%; text-align: left;}
+
+.MboxyBg{display:none;background-color:#000000;left:0;opacity:0.1;filter:alpha(opacity=10);position:absolute;top:0;z-index:9999;}
+.MshowBg{display:none;background:#fff;padding:15px 20px;left:50%;border:5px solid #ccc;position:fixed!important;_position:absolute;z-index:10000;}
+.MshowBg_tit{height:40px;line-height:40px;color:#333;font-size:16px;margin-bottom:20px;border-bottom:1px solid #eaeaea;}
+.MshowBg_tit strong{display:block;float:left;color:#666;}
+.MshowBg_tit strong span{font-weight:normal;}
+.MshowBg_tit a{display:block;float:right;font-size:12px;width:32px;height:32px;text-indent:-9999px;overflow:hidden;background-image:url(http://p.www.xiaomi.com/images/about/boxCloseicon.gif);background-repeat:no-repeat;background-position:0 0; }
+.MshowBg_tit a:hover{background-position:-38px 0;}
+.MshowBg_con{font-size:14px;color:#666;line-height:24px;}
+.MboxyBotton{padding:40px 0 0;text-align:center;}
+.MboxyBotton a.item,.promoUloginTips a{display:inline-block;height:36px;line-height:36px;text-align:center;background-color:#fd631e;color:#fff;width:100px;font-weight:bold;-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px;}
+.MboxyBotton a.item:hover,.promoUloginTips a:hover{text-decoration:none;color:#eaeaea;}
+/*for 4/6/2012 event*/
+.promoUloginTips dl{float:left;font-size:14px;color:#666;line-height:20px;}
+.promoUloginTips p{float:right;}
+
+
+
+/* S 我的订单页  yangzhankui  */
+.odr_bigtable{border:none; width: 100%;text-align: center; line-height: 20px; margin-bottom: 20px;}
+.odr_bigtable thead{background: #FAFAFA;}
+.odr_bigtable thead th{ padding:10px 16px; font-size: 14px; text-align: left; color:#979797;}
+.odr_bigtable thead th a{color:#979797;}
+.odr_bigtable thead .datetime{float: right;font-weight: normal; font-size: 12px;}
+.odr_bigtable th, .odr_bigtable td{padding:6px 10px;border:1px solid #E6E4E3;border-collapse:collapse;}
+.odr_bigtable tbody a{display:block; color:#545351; }
+.odr_bigtable tbody .aorange{color:#FA7A20;}
+.odr_bigtable tbody .alitgray{color:#979693;}
+.odr_bigtable tbody .agray{color:#545351;}
+.odr_bigtable tbody .abtn{color:#FFFFFF;background:#FD663B; width: 58px; height: 24px; line-height: 24px; margin: 0px auto; border-radius: 4px;text-decoration: none; margin-bottom: 10px; }
+.odr_bigtable .notd{padding: 0px; overflow: hidden;}
+.odr_bigtable .btd1{width:533px; }
+.odr_bigtable .btd2{width:114px;vertical-align: top; padding-top:22px;font-family:Arial;}
+.odr_bigtable .btd3{width:98px;vertical-align: top; padding-top: 22px;}
+
+.odr_smtable{width:100%; height: 100%; display: block;  border:none; }
+.odr_smtable .std1{width: 353px; border-left: none; border-top: none; padding-top:16px; text-align: left;}
+.odr_smtable .std2{width: 82px; border-top: none; vertical-align: top; padding-top: 22px;}
+.odr_smtable .std3{width: 96px; border-right: none; border-top: none;vertical-align: top; padding-top: 22px;}
+.odr_smtable .mimg{float:left;margin-left: 10px;}
+.odr_smtable .mimg img{width:60px; height: 60px;}
+.odr_smtable .porder{color:#7E7E7E;  text-align: left;}
+.odr_smtable .divorder{min-height: 60px;}
+.odr_smtable  tr:last-child td {border-bottom: none;}
+/* E 我的订单页  yangzhankui  */
+
+
+/*  S  原base.css  样式引入  */
+/* S m_form */
+.m_form {font-size:14px;line-height:24px;}
+.m_form label {display:block;}
+.m_form label span {color:#DF5E41;font-size:18px;vertical-align:middle;margin: 0 2px; }
+.m_form input, .m_form textarea,#card,.cardTxt{border-color:#cccccc; border-style: solid; border-width: 1px; font-size: 14px; background-color: #f6f6f6; }
+.m_form select{font-size:14px;}
+#card,.cardTxt{width:180px;}
+.m_form input, .m_form textarea,#card,.cardTxt{line-height:30px;height:30px;padding:0 4px;  }
+.m_form select {padding: 8px 4px;}
+.m_form input:hover, .m_form textarea:hover, .m_form input:focus, .m_form textarea:focus,#card:hover,#card:focus,.cardTxt:hover,.cardTxt:focus{ border-color: #f37c3b; color: #000000; background-color: #ffffff; }
+.m_form .m_f {margin-bottom:10px; }
+.m_form .m_f_address_details {margin:10px 0;}
+.m_form .m_f_msg_error,.m_form .m_f_msg_ok {display:none;}
+.m_form .m_f_msg{color:#B2B2B2;font-size:12px;}
+.m_form .m_f_btn input{font-weight:normal;font-size: 14px;background: none repeat scroll 0 0 #FD663B;color: #FFFFFF;line-height: 24px;margin: 0 auto 10px;text-decoration: none;width: 58px;}
+.m_form .m_f_btn_a input{background:#CCC;color:#FFF;}
+.m_form .m_f_email input, .m_form .m_f_username input{width:290px;}
+.m_form .m_f_address_details textarea{width:400px;}
+.m_form .m_f_zipcode input{width:100px;}
+/* E m_form */
+.cfl, #footer .nav { *zoom: 1; }
+#header .menu ul, #header .reg ul, #header .nav ul { *zoom: 1; }
+.m_product{*zoom:1;}
+.cfl:after, #footer .nav:after { content: "\0020"; display: block; height: 0; clear: both; overflow: hidden; visibility: hidden;}
+#header .menu ul:after, #header .reg ul:after, #header .nav ul:after { content: "\0020"; display: block; height: 0; clear: both; overflow: hidden; visibility: hidden; }
+.m_product:after { content: "\0020"; display: block; height: 0; clear: both; overflow: hidden; visibility: hidden;}
+/*for para table*/
+.paraTable tr { background-color: #ededed; color: #999999; font-size: 14px; }
+.paraTable tr.even { background-color: #f9f8f8; }
+.paraTable tr th, .paraTable tr td { padding: 10px 0; }
+.paraTable tr th { color: #333333; text-indent: 25px; width: 20%; text-align: left;}
+
+.MboxyBg{display:none;background-color:#000000;left:0;opacity:0.1;filter:alpha(opacity=10);position:absolute;top:0;z-index:9999;}
+.MshowBg{display:none;background:#fff;padding:15px 20px;left:50%;border:5px solid #ccc;position:fixed!important;_position:absolute;z-index:10000;}
+.MshowBg_tit{height:40px;line-height:40px;color:#333;font-size:16px;margin-bottom:20px;border-bottom:1px solid #eaeaea;}
+.MshowBg_tit strong{display:block;float:left;color:#666;}
+.MshowBg_tit strong span{font-weight:normal;}
+.MshowBg_tit a{display:block;float:right;font-size:12px;width:32px;height:32px;text-indent:-9999px;overflow:hidden;background-image:url(boxClose.gif);background-repeat:no-repeat;background-position:0 0; }
+.MshowBg_tit a:hover{background-position:-38px 0;}
+.MshowBg_con{font-size:14px;color:#666;line-height:24px;}
+.MboxyBotton{padding:40px 0 0;text-align:center;}
+.MboxyBotton a.item,.promoUloginTips a{display:inline-block;height:36px;line-height:36px;text-align:center;background-color:#fd631e;color:#fff;width:100px;font-weight:bold;-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px;}
+.MboxyBotton a.item:hover,.promoUloginTips a:hover{text-decoration:none;color:#eaeaea;}
+/*for 4/6/2012 event*/
+.promoUloginTips dl{float:left;font-size:14px;color:#666;line-height:20px;}
+.promoUloginTips p{float:right;}
+/*  E  原base.css  样式引入  */
+
+
+/*  S  原userCenter.common.css  样式引入  */
+/* userCenter , 2011-10-19 */
+.ff-MY, .aside .portlet-title, .m_order_satus li strong { font-family: "Microsoft YaHei"; }
+
+.support .support-title, .support .aside .nav dt { font-family: "Microsoft YaHei"; }
+
+.f14 { font-size: 14px; }
+
+.support .support-title, .support .aside .nav, .support .provision { font-size: 14px; }
+
+.fw4 { font-weight: 400; }
+
+.fw7, .userCenter-title { font-weight: 700; }
+
+.support .support-title { font-weight: 700; }
+.support .aside .nav dt, .support .aside .nav .current { font-weight: 700; }
+
+.tac { text-align: center; }
+
+/* S global */
+.mi_pay { display: block; width: 58px; height: 24px; background: #FD663B; color: #FFF; line-height: 24px; white-space: nowrap; margin: 0 auto 10px; }
+.mi_pay:hover { text-decoration: none; }
+
+.mi_picking { display: block; width: 12px; height: 12px; margin: 0 auto; text-indent: -1000px; overflow: hidden; background: #F37A1F; -webkit-border-radius: 12px; -moz-border-radius: 12px; -ms-border-radius: 12px; border-radius: 12px; }
+
+.m_table tbody td{font-family:Arial;}
+
+/* E global */
+
+
+
+
+
+/* S module */
+.m_table table { width: 100%!important;_width:99%; font-size: 14px; margin: 0 auto 10px;height:100%;_height:auto;}
+.m_table table table { margin-bottom: 0; height:100%;}
+.m_table td { border: 1px solid #E0E0E0; text-align: center; padding: 10px; }
+.m_table thead { background: #F6F6F6; color: #999; font-size: 12px; font-weight: 700; }
+.m_table thead a { color: #999; }
+.m_table thead td { padding: 6px 10px; text-align: center; }
+.m_table tbody td { background: #FFF; }
+
+.m_title { font-size: 18px; line-height:20px; margin: 0 0 20px; display: none; }
+
+.m_title_b { display: block; }
+
+.m_title_a { display: block; padding-bottom: 6px; border-bottom: 1px solid #EEEDE8; }
+
+.m_title_b a { float: right; font-size: 12px; font-weight: 400; font-family: verdana; }
+
+.m_form_invoice label { display: -moz-inline-stack; display: inline-block; *display: inline; *zoom: 1; text-align: right; width: 110px; margin: 0 10px 0 0; }
+
+.m_explain { font-size: 14px; background: #F3F3F3; padding: 16px 20px; margin: 0 0 20px; }
+
+.m_f_reg_address label { vertical-align: top; }
+
+.m_order { font-size: 12px; line-height: 1.6em; }
+.m_order dt { font-size: 14px; font-weight: 700; margin: 26px 0 10px; border-bottom: 1px solid #EEEDE8; padding-bottom: 6px; }
+.m_order dd span.label { display: -moz-inline-stack; display: inline-block; *display: inline; *zoom: 1; width: 70px; margin: 0 20px 0 0; text-align: right; }
+.m_order dd ol { margin: -23px 0 0 90px; }
+.m_order .logistics_note { background: #F3F3F3; width: 430px; padding: 6px 0; margin: 6px 0; text-align: center; }
+
+.m_order .m_order_box h3 { font-size: 14px; font-weight: 700; margin: 26px 0 10px; border-bottom: 1px solid #EEEDE8; padding-bottom: 6px; }
+.m_order .m_order_box li span.label { display: -moz-inline-stack; display: inline-block; *display: inline; *zoom: 1; width: 70px; margin: 0 20px 0 0; text-align: right; }
+.m_order li ol { margin: -23px 0 0 90px; }
+
+.m_order_list img { border: 1px solid #EDECE7; margin: 0 6px 0 0; float: left; width: 60px; height: 60px; }
+.m_order_list a { color: #19B8F3; }
+.m_order_list a.mi_cancel_order { color: #999; }
+.m_order_list a.mi_detail_order { text-decoration: underline; }
+.m_order_list .mi_payment { color: #999; }
+.m_order_list .mi_pay { color: #FFF; }
+.m_order_list .mi_goods_name { position: relative; top: 7px; }
+.m_order_list td { line-height:24px; }
+
+.m_form_order .errorMessage { color: #F00; float: left; line-height: 38px; padding-left: 10px; font-size: 12px; }
+.m_form_order a { color: #336799; }
+.m_form_order a:hover { text-decoration: underline; }
+.m_form_order .m_f_username input, .m_form_order .m_f_zipcode input, .m_form_order .m_f_mobile input, .m_form_order .m_f_address_details textarea, .m_form_order .m_f_address_select select { float: left; }
+.m_form_order .m_f_mobile .m_f_msg, .m_form_order .m_f_zipcode .m_f_msg { clear: both; }
+#UserAddress_address{height:68px;}
+.expand_user_address { margin: 0 0 20px; color: #666; }
+.expand_user_address td{text-align:left;}
+.expand_user_address thead { background: #F8F8F8; }
+.expand_user_address a { text-decoration: underline; color: #666; }
+
+.m_order_nav thead { background: #FFF; color: #999; font-weight: 400; }
+.m_order_nav td { border-color: #FFF; font-size: 12px; }
+
+/* orderSatus */
+.m_order_satus { margin: 0 0 40px; height: 120px; }
+.m_order_satus ol { overflow: hidden; background: url(http://p.www.xiaomi.com/images/order_arrow_sprite_01.png) 47px 0 no-repeat; }
+.m_order_satus ol.satusnum3 { width: 360px; }
+.m_order_satus ol.satusnum4 { width: 480px; }
+.m_order_satus ol.satusnum5 { width: 600px; }
+.m_order_satus ol.satus0 { background-position: 47px 0; }
+.m_order_satus ol.satus1 { background-position: 47px -120px; }
+.m_order_satus ol.satus2 { background-position: 47px -240px; }
+.m_order_satus ol.satus3 { background-position: 47px -360px; }
+.m_order_satus ol.satus4 { background-position: 47px -480px; }
+.m_order_satus ol.satus5 { background-position: 47px -600px; }
+.m_order_satus li { float: left; display: inline; width: 120px; text-align: center; }
+.m_order_satus li strong { display: block; font-size: 16px; padding: 50px 0 10px; white-space: nowrap; }
+.m_order_satus li.m_order_past strong, .m_order_satus li.m_order_now strong { color: #F58020; }
+.m_order_satus li.m_order_cn { background: url(http://p.www.xiaomi.com/images/order_arrow_now_02.png) 0 0 no-repeat; }
+
+/* E orderSatus */
+/* S pagination */
+.yiiPager { float: right; margin: 10px 0 0; }
+.yiiPager li { float: left; display: inline; }
+.yiiPager li a { display: -moz-inline-stack; display: inline-block; *display: inline; *zoom: 1; height: 15px; padding: 0 6px; line-height: 15px;color:#666;}
+.yiiPager li.selected a { background: #999; color: #FFF; }
+
+/* E pagination */
+/* order_nav */
+#order_nav { position: absolute; left: 0; top: 20px; width: 56px; border: 1px solid #F6F6F6; background: #FFF; line-height: 24px; padding: 0 10px; }
+#order_nav a { display: block; color: #999; }
+
+#order_btn { color: #333; padding: 0 12px 0 0; background: url(http://p.www.xiaomi.com/images/order_nav_bg.png) 100% 50% no-repeat; }
+#order_btn:hover { text-decoration: none; }
+
+.order_btn_wrap { background: #F6F6F6; -weikit-border-radius: 10px; -moz-border-radius: 10px; -ms-border-radius: 10px; border-radius: 10px; }
+
+/* order_nav */
+/* S userCenter.common */
+.list-view .summary { display: none; }
+
+.order_tabs { margin: 0 auto 10px; }
+.order_tabs ul { border-bottom: 2px solid #F0ECE9; }
+.order_tabs li { float: left; display: inline; font-size: 14px; margin: 0 10px 0 0; }
+.order_tabs li a { display: block; border: 1px solid #EFEEE9; padding: 4px 6px; }
+.order_tabs li a.current { background: #EDECE7; font-weight: 700; }
+
+.flash-success { background-color: #EEF6E7; border: 1px solid #D6E2CC; color: #008000; font-size: 14px; font-weight: 700; margin: 0 0 20px; padding: 15px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; border-radius: 5px; }
+.flash-error { background-color: #F7E7E6; border: 1px solid #E2CCCB; color: #B76666; font-size: 14px; font-weight: 700; margin: 0 0 20px; padding: 15px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; border-radius: 5px; }
+
+/* E userCenter.common */
+/* S return */
+.return_intro { font-size: 14px; line-height: 24px; }
+.return_intro h3 { font-size: 16px; margin: 12px 0; }
+.return_intro li { padding: 0 0 0 24px; }
+.return_intro .m_form_return .m_f_type select { width: 200px; }
+.return_intro .m_form_return .m_f_description textarea { width: 400px; }
+.return_intro .m_form_return .m_f_bank_name input { width: 160px; }
+.return_intro .m_form_return .m_f_bank_account input { width: 400px; }
+.m_form_return .article_return_intro{ height:200px; border:1px solid #CCC; overflow:auto; font-size:12px; padding:0 10px; margin:10px 0; }
+.m_form_return .line{ height:1px; overflow:hidden; clear:both; background-color:#EEEDE8; margin:20px 0; }
+.m_form_return label input{vertical-align:middle;}
+.m_form_return h3.tit{margin-top:20px;}
+.m_form_return .doreturn_post,.m_form_return .doreturn_get{ margin:10px 0; }
+.m_form_return .doreturn_bank input{width:260px;}
+.m_form_return .btn input{cursor:pointer;width:80px;}
+.m_form_return .status_h{display:none;}
+.m_form_return .status_b{display:block;}
+.m_form_return #CarrierNotes_is_post_0,
+.m_form_return #CarrierNotes_is_post_1{ border:none; transparent;}
+.m_form_return .doreturn_methodcfl .labelForRadio{display:inline;}
+.m_form_return .doreturn_methodcfl input{vertical-align:middle;}
+.m_form_return .doreturn_methodcfl label{margin-right:20px;}
+.m_form_return #songhuoshangmen{margin-bottom:10px;}
+.m_form_return .errorMessage{color:#F00;}
+.m_form_return #Order_address{width:400px;height:68px;}
+.m_form_return .doreturn_bank label{margin-top:12px;}
+.m_form_return input#field_where_two,
+.m_form_return #return_status_1 input,
+.m_form_return #CarrierNotes_is_post_0,
+.m_form_return #CarrierNotes_is_post_1,
+.m_form_return #CarrierNotes_is_post_2
+{_background:transparent;_border:none;}
+.m_form_return #CarrierNotes_reason{line-height:20px;font-size:12px;}
+.m_form_return #CarrierNotes_address{margin-top:10px;}
+/* E return */
+/* searchExpress */
+.searchExpress { border: 1px dotted #F60; margin: 30px 0 0; padding: 10px; }
+
+.cfl, .aside .operations, #container { zoom: 1; }
+
+.m_form_order .m_f, .m_form_order .m_f_address_details, .m_form_order .m_f_zipcode { zoom: 1; }
+
+.m_order_satus ol, .yiiPager, .order_tabs ul { zoom: 1; }
+
+.cfl:after, .aside .operations:after, #container:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+
+.m_form_order .m_f:after, .m_form_order .m_f_address_details:after, .m_form_order .m_f_zipcode:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+
+.m_order_satus ol:after, .yiiPager:after, .order_tabs ul:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+
+.m_table .mi_goods_set td { background: #F6F6F6; }
+.m_table .mi_goods_set_c { padding-left: 40px; }
+.m_table .mi_goods_set_c td { background: #F6F6F6; }
+.m_table .mi_goods_set_c .mi_goods_set_cd { padding-left: 45px; }
+
+.row_sp_01 label.labelForRadio { display:inline; }
+.row_sp_01 #CarrierNotes_is_post_0,
+.row_sp_01 #CarrierNotes_is_post_1,
+#field_where_two,
+#field_where_first,
+#CarrierNotes_uniquecode{ vertical-align:middle; }
+.pro_order_title{margin-top:20px;}
+#m_order_proCon{position:relative;}
+#m_order_proCon .m_order_proCon_bg{position:absolute;right:100px;top:-50px;background:url(http://p.www.xiaomi.com/images/chenggongtu.png) no-repeat center;;width:368px;height:333px;}
+
+.mi_cancel_order,
+.mi_vat{
+	color:#AEAEAE;
+}
+
+a.orderChange{font-size:12px;font-weight:normal;color:#f60;}
+a.orderChange:hover{text-decoration: none;}
+#Order_address{height:68px;}
+#verificationCode{
+	border:1px solid #cccccc;
+	padding:20px 20px;
+	background-color:#FFF;
+	line-height:24px;
+	width:360px;
+	position:fixed!important;
+	_position:absolute;
+	top:290px;
+	left:50%;
+	margin-left:-180px;
+	z-index:1;
+	-webkit-box-shadow: 2px 2px 4px #CCC;
+	-moz-box-shadow: 2px 2px 4px #CCC;
+	box-shadow: 2px 2px 4px #CCC;
+}
+#verificationCode #close{
+	float:right;
+	font-size:12px;
+    color:#999999;
+}
+#verificationCode #close:hover{
+	float:right;
+	font-size:12px;
+    color:#f60;
+}
+div.bd p{ color:#999999}
+span.tel{
+    font-size:22px;
+    font-family:"Microsoft YaHei";
+}
+input#authcode{
+    height:24px;
+	line-height:24px;
+	vertical-align:middle;
+    border:1px solid #d7d7d7;
+    width:58px;
+}
+#verificationCode .hd{
+	font-size:14px;
+	line-height:20px;
+	margin-bottom:10px;
+}
+#verificationCode #checkVerificationCode{
+	display:-moz-inline-stack;display:inline-block;*display:inline;*zoom:1;
+	color:#FFF;
+	background-color:#F47B20;
+	font-weight:700;
+	padding:0 10px;
+	margin-left:10px;
+	line-height:24px;
+	vertical-align:middle;
+}
+.checkauthcodeForm_phone{padding:10px 0;}
+.checkauthcodeForm_phone span,.checkauthcodeForm_phone a{display:block;height:26px;line-height:26px;float:left;margin-right:20px;}
+.reSend{background-color:#eaeaea;font-size:14px;padding:0 10px;}
+#sendVerificationCode{color:#FFF;background-color:#F47B20;padding:0 10px;}
+#checkout-form ul.errorMsg{
+	color:#F00;
+}
+.bdService{padding:20px 0;}
+.bdService li{float:left;}
+.bdService_l{padding:30px 20px 0 40px;text-align:right;line-height:20px;color:#999999;font-family:"Microsoft YaHei";}
+.bdService_l strong{color:#666666;display:block;font-size:22px;font-weight: 400;margin: 6px 0 0;}
+.bdService_r a{ background: url("http://p.www.xiaomi.com/images/ol_service.png") no-repeat scroll 0 0 transparent;display: block;height: 103px;overflow: hidden;text-indent: -999em;width: 81px;}
+.m_order_weibo,.m_order_weibo_small{margin-bottom:10px;border:1px solid #e4e2e2;text-align:center;}
+.m_order_weibo h2{line-height:35px;color:#ff7000;font-size:36px;}
+.m_order_weibo_close{text-align:right;height:30px;line-height:30px;padding-right:10px;}
+.m_order_weibo dt{padding:15px 0 30px;font-size:18px;color:#666;font-weight:bold;}
+.m_order_weibo dd.item2{padding:15px 30px;line-height:24px;font-size:14px;color:#666;font-weight:bold;}
+.m_order_weibo dd strong.em1{display:block;padding-bottom:15px;font-size:18px;color:#666;font-weight:bold;}
+.m_order_weibo dd.item2 a{font-weight:normal;color:#ff6600;}
+.m_order_weibo dd.item2 span{color:#e70606;}
+.m_order_weibo_small{display:none;padding:10px 0;cursor:pointer;}
+#showCheckedname p,#showCheckedname textarea{float:left;}
+.diy_piclist { float: left; display: inline; text-align: left; margin-right: 24px; }
+.diy_piclist .preview { height: 123px; width: 67px; overflow: hidden; position: relative; }
+.diy_piclist .preview .mask { background: url(http://p.www.xiaomi.com/images/diy/bg/mask3.png) 0 0 no-repeat !important; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=noscale, src='http://p.www.xiaomi.com/images/diy/bg/mask3.png'); _background: none; width: 67px; height: 123px; position: absolute; top: 0; left: 0; z-index: 9; }
+/*  E  原userCenter.common.css  样式引入  */
+
+
+
+

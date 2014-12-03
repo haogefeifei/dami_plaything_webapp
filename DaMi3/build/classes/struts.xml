@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC 
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN" 
+    "http://struts.apache.org/dtds/struts-2.0.dtd" >
+<struts>
+	<package name="struts2" extends="struts-default">
+	
+	   <action name="p_*" class="ProAction" method="{1}">
+		    <result name="fid">/udproduct.jsp</result>
+			<result name="zero" type="redirect">/files/showPlist</result>
+			<result name="one" type="redirect">/files/showPlist</result>	
+			<result name="udmsg" type="redirect">/files/showPlist</result>	
+		</action>
+	    
+	    <!-- 登录 -->
+	    <action name="login" class="LoginAction">
+			<result name="success">/login2.jsp</result>
+			<result name="error">/login3.jsp</result>
+			<result name="none">/login4.jsp</result>
+			<result name="info">/login5.jsp</result>			  
+		</action>
+		
+	    <!-- 验证用户邮箱是否存在 -->
+	    <action name="info" class="LoginAction" method="info">
+			<result name="success">/login2.jsp</result>
+		</action>
+		
+	    <!-- 退出登录 -->
+	    <action name="exit" class="LoginAction" method="exit">
+			<result name="success">/index.jsp</result>
+		</action>
+	    
+	    <!-- 验证用户邮箱是否存在 -->
+	    <action name="checking" class="RegisterAction" method="checking">
+			<result name="json" />  
+		</action>
+		
+	    <!-- 注册 -->
+	    <action name="register" class="RegisterAction" method="register">
+			<result name="fromerror">/register2.jsp</result>
+			<result name="success">/register3.jsp</result>			  
+		</action>
+		
+	    <!-- 随机获取验证码 -->
+	    <action name="SecurityCodeImageAction" class="RegisterAction">
+             <result name="success" type="stream">
+                 <param name="contentType">image/jpeg</param>
+                 <param name="inputName">imageStream</param>
+                 <param name="bufferSize">2048</param>
+             </result>
+         </action>
+	    
+		<action name="regist_*" class="RegistAction" method="{1}">
+			<result name="add" type="redirect">/regist_find</result>
+			<result name="find">/index.jsp</result>
+		</action>
+		
+		<!-- 用户修改密码 -->
+	    <action name="alter" class="LoginAction" method="alterUser">
+			<result name="nologin">/login6.jsp</result>
+			<result name="success">/xgcg.jsp</result>			  
+		</action>
+		
+	</package>
+	
+	<include file="product.xml"/>
+	<include file="shopcar.xml"/>
+	<include file="dingdan.xml"/>
+	<include file="upload.xml"/>
+	<include file="admin.xml"/>
+	<include file="home.xml"/>
+	<include file="indent.xml"/>
+	
+</struts>
+
+ 

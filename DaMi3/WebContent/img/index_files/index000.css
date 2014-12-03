@@ -1,0 +1,215 @@
+/* b2c , 2011-10-10 */
+body, h1, .hgroup h2, h2, h3, h4, h5, h6, blockquote, p, pre, dl, dd, menu, ol, ul, caption, th, td, form, fieldset, legend, input, button, textarea { margin: 0; padding: 0; }
+h1, .hgroup h2, h2, h3, h4, h5, h6 { font-size: 100%; }
+menu, ol, ul { list-style: none; }
+table { border-collapse: collapse; border-spacing: 0; }
+fieldset, img { border: 0; }
+address, cite, dfn, em, var { font-style: normal; }
+code, kbd, pre, samp { font-family: 'courier new',courier,monospace; }
+input, button, textarea, select { font-size: 100%; }
+abbr[title] { border-bottom: 1px dotted; cursor: help; }
+a { outline: none; text-decoration: none; }
+body, input, button, textarea, select, option, optgroup { font: 12px/1 arial, \5b8b\4f53, sans-serif; }
+/* color */
+.ff-MY, .menu, .contact, .goods_name, .goods_cat, .goods_price { font-family: "Microsoft YaHei"; }
+.f14 { font-size: 14px; }
+.fw4 { font-weight: 400; }
+.fw7, .menu, .contact, .goods_name, .goods_cat, .goods_price { font-weight: 700; }
+a { color: #333; }
+a:hover { text-decoration: underline; }
+html { overflow-y: scroll; background: #ffffff; }
+.container { width: 980px; margin: 0 auto; }
+/* header */
+.menu,#mainMenu_top,#mainMenu_top li,#mainMenu_top li a.on,#mainMenu_top li a:hover{background-image:url(xiaomi_i.png);background-color:transparent;}
+#header {height:78px;overflow:hidden;position:relative;}
+#header .logo { position: absolute; top:10px; left: 0; }
+#header .logo a { display: block; width:157px; height:59px; text-indent: -999px; overflow: hidden; background:url(xiaomi_b.gif) no-repeat -751px -2px; }
+.menu{width:823px;height:59px;position:absolute;top:10px;left:157px;background-position:0 -61px;background-repeat:repeat-x;}
+#mainMenu_top{margin-left:3px;width:820px;height:59px;font-size:14px;font-weight:bold;background-position:817px 0;background-repeat:no-repeat;}
+#mainMenu_top li{height:59px;float:left;display:inline-block;background-position:0 -61px;background-repeat:repeat-x;}
+#mainMenu_top li a{display:block;height:36px;width:101px;padding-top:20px;border-right:1px solid #ececec;}
+#mainMenu_top li a:hover{background-position:0 -122px;background-repeat:repeat-x;}
+#mainMenu_top li a.on{background-position:0 -183px;background-repeat:repeat-x;}
+#mainMenu_top li a span{ cursor:pointer;display:block;width:38px;height:17px;margin:0 auto;text-indent:-999em;overflow:hidden; background-image:url(xiaomi_b.gif);}
+#mainMenu_top li.m1 a span {background-position: 0 0; }
+#mainMenu_top li.m1 a:hover span { background-position: 0 -22px; }
+#mainMenu_top li.m1 a.on span { background-position: 0 -44px; }
+#mainMenu_top li.m2 a span {width:66px;background-position:-86px 0; }
+#mainMenu_top li.m2 a:hover span { background-position:-86px -22px; }
+#mainMenu_top li.m2 a.on span { background-position:-86px -44px; }
+#mainMenu_top li.m3 a span { background-position:-205px 0; }
+#mainMenu_top li.m3 a:hover span { background-position:-205px -22px; }
+#mainMenu_top li.m3 a.on span { background-position:-205px -44px; }
+#mainMenu_top li.m4 a span { background-position:-305px 0; }
+#mainMenu_top li.m4 a:hover span { background-position:-305px -22px; }
+#mainMenu_top li.m4 a.on span { background-position:-305px -44px; }
+#mainMenu_top li.m5 a span { background-position:-406px 0; }
+#mainMenu_top li.m5 a:hover span { background-position:-406px -22px; }
+#mainMenu_top li.m5 a.on span { background-position:-406px -44px; }
+#mainMenu_top li.m6 a span { background-position:-506px 0; }
+#mainMenu_top li.m6 a:hover span { background-position:-506px -22px; }
+#mainMenu_top li.m7 a span {background-position:-608px 0; }
+#mainMenu_top li.m7 a:hover span { background-position:-608px -22px; }
+#mainMenu_top li.m8 a span {background-position:-707px 0; }
+#mainMenu_top li.m8 a:hover span {background-position:-707px -22px; }
+#mainMenu_top li.m8 a{border:0;}
+#regArea{color:#999;height:20px;padding-top:10px;}
+#regArea .user { padding-right: 14px;display:inline-block;line-height:12px!important;_line-height:15px;border-right: 1px solid #CCC; }
+#regArea a { display: -moz-inline-stack; display: inline-block; *display: inline; *zoom: 1; padding: 0 10px; border-right: 1px solid #CCC; color: #999;line-height:12px!important;*line-height:14px!important;_line-height:15px;}
+#regAreaa .highlight { color: #F05E13; font-weight: 700; }
+#regArea a:hover { text-decoration: none; color: #F60; }
+#regArea a.cart {background:url(xiaomi_b.gif) -915px -31px no-repeat; padding-left: 34px; padding-right: 0; border: none; }
+#regArea a.cart:hover span { font-weight: 400; }
+#regArea ul{width:980px;margin:0 auto;}
+.regArea_l{float:left;}
+.regArea_r{float:right;}
+#regArea a.reg_done{padding:0 0 0 10px;border:none;}
+/* footer */
+.promise, #footer, .copyright { width: 980px; margin: 0 auto; }
+#footer_wrap { background: #F8F7F7; overflow: hidden; margin: 60px 0 0; *zoom: 1; }
+#footer { color: #666; padding: 16px 0 20px; position: relative; border-top: 1px solid #E9E8E8; border-bottom: 1px solid #E9E8E8; }
+#footer .nav { font-size: 12px; padding-left: 17px; }
+#footer .nav a { color: #343434; }
+#footer .nav dt { color: #656565; font-size: 15px; font-weight: 700; line-height: 30px;  }
+#footer .nav dl { float: left; display: inline;  width:200px; }
+#footer .nav dd { margin: 10px 0 0;  }
+#footer .nav dd a{margin-right: 12px;line-height:14px;}
+#footer .nav .onlineservice dd{float: left;height:15px;}
+#footer .nav .onlineservice{margin: 0 80px 0 0;}
+#footer .nav .weibo{margin: 0 50px 0 0;}
+#footer .nav .xmhome{margin: 0 92px 0 0; }
+#footer .nav .xmphone{width:140px;color:#343434;}
+#footer .nav .xmphone dt{font-size:20px;color:#323232;font-weight: 500;}
+#footer .nav .xmphone dd{padding-left:6px;}
+#footer .service { font-family: "Microsoft YaHei"; position: absolute; color: #999; top: 50px; left: 712px; line-height: 18px; text-align: right; }
+#footer .service span { font-size: 24px; }
+#footer .service strong { font-size: 22px; font-weight: 400; color: #666; display: block; margin: 6px 0 0; }
+#footer .service .working_time { font-size: 12px; }
+.copyright { color: #999; text-align: center; margin: 20px auto; }
+.copyright a { border-right: 1px solid #989898; padding: 0 14px; color: #666; }
+.copyright p a{border:0;padding:0 5px;color:#999999;}
+.copyright a.xiaomi_lnk { padding-left: 0; }
+.copyright a.miliao_lnk { border: none; }
+.copyright span { margin-left: 20px; }
+.promise { background: url(xiaomi_b.gif) no-repeat 0 -68px;position:relative;height:30px;padding:0 0 20px;overflow:hidden;margin-top:50px;}
+.promise a { display: block;  height: 30px; text-indent: -999em; overflow: hidden; }
+.promise li { position: absolute; top: 0px; }
+.promise li.pr1 { left: 280px; }
+.promise li.pr1 a{width: 120px;}
+.promise li.pr2 { left: 432px; }
+.promise li.pr2 a{width: 130px;}
+.promise li.pr3 { left: 594px; }
+.promise li.pr3 a{width: 186px;}
+.promise li.pr4 { left: 815px; }
+.promise li.pr4 a{width: 165px;}
+#ol_service{position:absolute;top:14px;left:880px;display:block;width:81px;height:103px;background:url(http://p.www.xiaomi.com/images/ol_service.png) 0 0 no-repeat;text-indent:-999em;overflow:hidden;}
+/* S m_product */
+.m_product .m_p_photo, .m_product .m_p_info { float: left; display: inline; }
+/* E m_product */
+/* S m_product_b */
+.m_product_a .m_p_photo, .m_product_a .m_p_info { float: none; display: block; }
+/* E m_product_b */
+/* S m_form */
+.m_form {font-size:14px;line-height:24px;}
+.m_form label {display:block;}
+.m_form label span {color:#DF5E41;font-size:18px;vertical-align:middle;margin: 0 2px; }
+.m_form input, .m_form textarea{border-color:#cccccc; border-style: solid; border-width: 1px; font-size: 14px; background-color: #f6f6f6; }
+.m_form select{font-size:14px;}
+.m_form input, .m_form textarea {line-height:34px;height:34px;padding:0 4px; }
+.m_form select {padding: 8px 4px;}
+.m_form input:hover, .m_form textarea:hover, .m_form input:focus, .m_form textarea:focus { border-color: #f37c3b; color: #000000; background-color: #ffffff; }
+.m_form .m_f {margin-bottom:10px; }
+.m_form .m_f_address_details {margin:10px 0;}
+.m_form .m_f_msg_error,.m_form .m_f_msg_ok {display:none;}
+.m_form .m_f_msg{color:#B2B2B2;font-size:12px;}
+.m_form .m_f_btn input{color:#FFF;background:#F37520;border: none; font-weight: 700; padding: 6px 20px; cursor: pointer; }
+.m_form .m_f_btn_a input{background:#CCC;color:#FFF;}
+.m_form .m_f_email input, .m_form .m_f_username input{width:290px;}
+.m_form .m_f_address_details textarea{width:400px;}
+.m_form .m_f_zipcode input{width:100px;}
+/* E m_form */
+.cfl, #footer .nav { *zoom: 1; }
+#header .menu ul, #header .reg ul, #header .nav ul { *zoom: 1; }
+.m_product{*zoom:1;}
+.cfl:after, #footer .nav:after { content: "\0020"; display: block; height: 0; clear: both; overflow: hidden; visibility: hidden;}
+#header .menu ul:after, #header .reg ul:after, #header .nav ul:after { content: "\0020"; display: block; height: 0; clear: both; overflow: hidden; visibility: hidden; }
+.m_product:after { content: "\0020"; display: block; height: 0; clear: both; overflow: hidden; visibility: hidden;}
+/*for para table*/
+.paraTable tr { background-color: #ededed; color: #999999; font-size: 14px; }
+.paraTable tr.even { background-color: #f9f8f8; }
+.paraTable tr th, .paraTable tr td { padding: 10px 0; }
+.paraTable tr th { color: #333333; text-indent: 25px; width: 20%; text-align: left; }
+/* index */
+.cfl, #family_mi ul, #extra_focus,#xmFocus,.xmbbs_m_con ul li,.xmbbs_s li a{ *zoom: 1; }
+.cfl:after, #family_mi ul:after, #extra_focus:after,#xmFocus:after,.xmbbs_m_con ul li:after,.xmbbs_s li a:after{ content: "\0020"; display: block; height: 0; clear: both; overflow: hidden; visibility: hidden; }
+.hidden{display:none;}
+.xmFocus_main{float:left;width:980px;}
+.xmFocus_side{float:right;width:250px;}
+.xmFocus_side_tui{display:block;width:250px;height:248px;}
+.xmFocus_side_news{border:1px solid #f3f3f3;margin-top:5px;}
+.xmFocus_side_news h2{height:27px;border-bottom:1px solid #f3f3f3;padding-top:10px;}
+.xmFocus_side_news h2 span,.xmAcce_top h2 span,.xmbbs_s li span{background-image:url(xiaomi_i.gif);background-color:transparent;}
+.xmFocus_side_news h2 span{display:block;background-position:-145px -33px;width:126px;height:18px;overflow:hidden;text-indent:-9999px;margin-left:10px;}
+.xmFocus_side_news ul{padding:12px 0 15px 15px;}
+.xmFocus_side_news ul li{height:24px;line-height:24px;overflow:hidden;background:url(xiaomi_i.png) no-repeat 0 -241px;padding-left:10px;}
+.xmFocus_side_news ul li a{color:#666666;font-size:13px;}
+.xmAcce_top{background-color:#d7bd95;height:45px;margin:10px 0 5px 0;}
+.xmAcce_top h2{float:left;padding:7px 0 0 10px;}
+.xmAcce_top h2 span{display:block;background-position:0 0;width:270px;height:27px;overflow:hidden;text-indent:-9999px;}
+.xmAcce_top a{float:right;color:#ffffff;font-size:13px;margin:16px 12px 0 0;}
+.xmAcce_con ul{position:relative;height:511px;overflow:hidden;}
+.xmAcce_con li{position:absolute;}
+.xmAcce_con li a img{border:1px solid #ffffff;}
+.xmAcce_con li a:hover img{border:1px solid #cccccc;}
+.xmAcce_con li.item1{left:0;top:0;}
+.xmAcce_con li.item2{left:410px;top:0;}
+.xmAcce_con li.item3{left:594px;top:0;}
+.xmAcce_con li.item4{left:0;top:224px;}
+.xmAcce_con li.item5{left:205px;top:224px;}
+.xmAcce_con li.item6{left:205px;top:368px;}
+.xmAcce_con li.item7{left:410px;top:224px;}
+.xmAcce_con li.item8{left:778px;top:0;}
+#xmbbs{margin-top:10px;}
+.xmbbs_m,.xmbbs_s{border:1px solid #f3f3f3;}
+.xmbbs_m{float:left;width:483px; }
+.xmbbs_s{float:right;width:223px;padding:10px;}
+.xmbbs_m_top a{float:right;margin:0px 15px 0 0;color:#666666;}
+.xmbbs_m_top{height:38px;line-height: 38px;background-color:#ffffff;border-bottom:1px solid #f3f3f3;}
+.xmbbs_m_top h2{float:left;padding:0px 0 0 10px;font-size:16px;font-weight: normal;color: #6A6A6A}
+.xmbbs_m_top h2 span{display:block;background-position:-1px -34px;width:113px;height:17px;overflow:hidden;}
+.xmbbs_m_con{padding:10px;padding-left: 17px}
+.xmbbs_m_con p{float:left;width:351px;}
+.xmbbs_m_con ul{width:450px;}
+.xmbbs_m_con li{background:url(xiaomi_i.png) no-repeat 0 -241px;padding-left:14px;height:24px;line-height:24px;overflow:hidden;}
+.xmbbs_m_con li a{float:left;width:380px;color:#666666;font-size:14px;}
+.xmbbs_m_con li span{float:right;width:35px;text-align:right;color:#999999;font-size:12px;}
+.xmbbs_s li{margin-bottom:13px;}
+.xmbbs_s li.item3{margin-bottom:0px;}
+.xmbbs_s a{display:block;font-size:14px;color:#7a7a7a;}
+.xmbbs_s a strong{display:block;float:left;height:38px;line-height:38px;font-weight:normal;}
+.xmbbs_s li span{display:block;float:left;width:37px;height:38px;margin-right:15px;}
+.xmbbs_s li.item1 span{background-position:-45px -59px;}
+.xmbbs_s li.item2 span{background-position:-89px -59px;}
+.xmbbs_s li.item3 span{background-position:0 -59px;}
+.slides_container { width:980px;}
+.slides_container a {width:980px;height:440px;display:block; }
+.xmFocus_main{width:980px;height:440px;overflow:hidden;}
+#slides{position:relative;}
+.pagination{height:30px;position:absolute;right:10px;bottom:10px;z-index:9999;filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#B2FFFFFF', endColorstr='#B2FFFFFF');background:rgba(255,255,255,0.7);-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px;}
+.pagination li{float:left;width:30px;text-align:center;line-height:30px;font-size:16px;}
+.pagination li a{color:#666666;width:30px;display:block;background-image:url(about:blank);}
+.pagination li a:hover{text-decoration:none;}
+.pagination li.current a{color:#19B8F3;font-weight:bold;}
+/*add 20111114 by 150*/
+.slides_container li{float:left;}
+#slides{position:relative;}
+#slides ul{position: absolute;}
+/* online service */
+html,body{_background-image:url(about:blank);_background-attachment:fixed;}
+#online_service{position:fixed;bottom:10px;right:10px;-moz-border-radius:10px;-webkit-border-radius:10px;border-radius:10px;-moz-box-shadow:2px 2px 6px #ccc;-webkit-box-shadow:2px 2px 6px #ccc;box-shadow:2px 2px 6px #ccc;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=90);opacity:0.9;}
+#online_service #online_service_lnk{display:block;width:130px;height:130px;overflow:hidden;-moz-border-radius:10px;-webkit-border-radius:10px;border-radius:10px;border:1px solid #E3E3E3;}
+#online_service{_position:absolute;_bottom:auto;_top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop,10)||0)-(parseInt(this.currentStyle.marginBottom,10)||0)));}
+#close_online_service{display:block;width:18px;height:18px;text-align:center;position:absolute;right:4px;top:4px;font-size:21px;line-height:18px;color:#A3A3A3;}
+#close_online_service:hover{background:#A3A3A3;color:#FFF;-moz-border-radius:18px;-webkit-border-radius:18px;border-radius:18px;}
+/**/
+

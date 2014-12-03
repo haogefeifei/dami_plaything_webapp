@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC 
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN" 
+    "http://struts.apache.org/dtds/struts-2.0.dtd" >
+<struts>
+    
+    	<package name="json" extends="json-default">
+		<action name="dami_*" class="SelectuserAction" method="{1}">
+			<result name="success" type="json">
+    			 <param name="root">list</param>
+    			 <param name="excludeProperties">\[\d+\]\.addresses,\[\d+\]\.indents,\[\d+\]\.shopcarts</param>
+    		</result>
+    		
+    			<result name="page" type="json">
+    			         <param name="root">page</param>
+    			</result>
+		</action>
+		
+		<action name="indent_*" class="SelectindentAction" method="{1}">
+			<result name="success" type="json">
+    			 <param name="root">list</param>
+    			 <param name="excludeProperties">\[\d+\]\.indentproducts,\[\d+\]\.loginuser</param>
+    		</result>
+    		
+    			<result name="page" type="json">
+    			         <param name="root">page</param>
+    			</result>
+		</action>
+		
+		<action name="select_*" class="SelectindentAction" method="{1}">
+			<result name="success" type="json">
+    			 <param name="root">list</param>
+    			 <param name="excludeProperties">\[\d+\]\.indentproducts,\[\d+\]\.loginuser</param>
+    		</result>
+    		
+    			<result name="page" type="json">
+    			         <param name="root">page</param>
+    			</result>
+		</action>
+		
+		<action name="cha_*" class="SelectindentAction" method="{1}">
+			<result name="success" type="json">
+    			 <param name="root">list</param>
+    			 <param name="excludeProperties">\[\d+\]\.indentproducts,\[\d+\]\.loginuser</param>
+    		</result>
+    		
+    			<result name="page" type="json">
+    			         <param name="root">page</param>
+    			</result>
+		</action>
+		
+		<action name="all_*" class="SelectindentAction" method="{1}">
+			<result name="success" type="json">
+    			 <param name="root">list</param>
+    			 <param name="excludeProperties">\[\d+\]\.indentproducts,\[\d+\]\.loginuser</param>
+    		</result>
+    		
+    			<result name="page" type="json">
+    			         <param name="root">page</param>
+    			</result>
+		</action>
+	</package>
+</struts>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC 
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN" 
+    "http://struts.apache.org/dtds/struts-2.0.dtd" >
+<struts>
+	<package name="admin" extends="struts-default">
+	   <!-- 登录 -->
+	    <action name="adminlogin" class="AdminLoginAction">
+			<result name="success">/Home.jsp</result>
+			<result name="fromerror">/admin2.jsp</result>
+			 <result name="error">/admin3.jsp</result>
+		</action>
+		
+	    <action name="adminexit" class="AdminLoginAction" method="exit">
+			<result name="success" type="redirect">/admin4.jsp</result>
+		</action>
+		<action name="admin_*" class="AdminLoginAction" method="{1}">
+			<result name="selectid" type="redirect">/addquanxian1.jsp</result>
+		</action>
+	</package>
+	
+	
+</struts>
+
+ 

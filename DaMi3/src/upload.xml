@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC 
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN" 
+    "http://struts.apache.org/dtds/struts-2.0.dtd" >
+<struts>
+	<package name="upload" namespace="/imager" extends="struts-default">
+	    <!-- 配置处理文件上传的Action -->
+        <action name="upload" class="ProductuploadAction" method="upload">
+            <interceptor-ref name="fileUpload">
+                <!-- 通过动态设置allowTypes的属性来动态指定允许上传的文件类型 -->
+                <param name="allowTypes">
+                    image/png,image/gif,image/jpeg,
+                    application/zip,application/vnd.ms-word,text/plain        
+            </param>
+                <param name="maximumSize">50485760</param>
+            </interceptor-ref>
+            <interceptor-ref name="defaultStack" />
+            <!-- 动态设置Action的属性值 -->
+            <param name="imagePath">/image</param>
+            <param name="image_smallPath">/image_small</param>
+            <param name="file_zipPath">/file</param>
+            <!-- 配置Struts2默认的视图资源 -->
+            <result>/success.jsp</result>
+            <!-- 配置该应用的input逻辑视图 -->
+            <result name="input">/testIndex.jsp</result>
+	    </action>
+		
+	</package>
+</struts>
+
+ 

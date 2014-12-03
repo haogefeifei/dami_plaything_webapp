@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>DaMi3</display-name>
+	
+  <!-- 404 页面不存在错误  --> 
+	<error-page> 
+		<error-code>404</error-code> 
+		<location>/error.jsp</location> 
+	</error-page> 
+	<!-- 500 服务器内部错误 -->
+	<error-page> 
+		<error-code>500</error-code> 
+		<location>/error.jsp</location> 
+	</error-page>  
+  
+  
+  <!-- 配置Spring自动装配ApplicationContext监听器 -->
+  <listener>  
+    <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>  
+  </listener>
+  
+ <!-- 在spring中要使用request、session和 global session作用域的bean(即具有web作用域的bean),需要配置一下监听器 -->
+  <listener>
+    <listener-class>org.springframework.web.context.request.RequestContextListener</listener-class>
+  </listener>
+
+  <!-- 延长session的生命周期，防止出现no session错误 -->
+  <filter>
+   	<filter-name>OpenSessionInView</filter-name>
+   	<filter-class>org.springframework.orm.hibernate3.support.OpenSessionInViewFilter</filter-class>
+  </filter>
+	<filter-mapping>
+    	<filter-name>OpenSessionInView</filter-name>
+    	<url-pattern>/*</url-pattern>       
+	</filter-mapping>
+  
+  
+   <!-- struts2配置信息 -->
+  <filter>
+    <filter-name>struts2</filter-name>
+    <filter-class>org.apache.struts2.dispatcher.FilterDispatcher</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>struts2</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+  
+  <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>

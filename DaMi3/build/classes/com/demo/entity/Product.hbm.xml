@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.demo.entity.Product" table="product">
+        <id name="psid">
+            <column name="psid" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="phone" class="com.demo.entity.Phone" fetch="select">
+            <column name="phone" />
+        </many-to-one>
+        <many-to-one name="psort" class="com.demo.entity.Psort" fetch="select">
+            <column name="psort" />
+        </many-to-one>
+        <property name="pname"/>
+        <property name="pnameid"/>
+        <property name="pselect"/>
+        <property name="pxx"/>
+        <property name="pinfo"/>
+        <property name="price"/>
+        <property name="pmoblie"/>
+        <property name="pmessage"/>
+        <property name="pnorms"/>
+        <property name="pimg"/>
+        <property name="pimgbig"/>
+        <property name="pimgmiddle"/>
+        <property name="pimgsmall"/>
+        <property name="pstatus"/>
+        <property name="ptotal"/>
+        <property name="pstock"/>
+        <set name="indentproducts" inverse="true" lazy="false">
+            <key>
+                <column name="pid"/>
+            </key>
+            <one-to-many class="com.demo.entity.Indentproduct" />
+        </set>
+    </class>
+</hibernate-mapping>
